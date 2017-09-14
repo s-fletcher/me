@@ -1,0 +1,34 @@
+body{
+  background-color: lightgrey;
+}
+
+.row {
+  font-size: 30px;
+  margin: 0 auto;
+  display: table;
+}
+
+.its{
+  float:left;
+  padding-right: 20px;
+  padding-top: 3px;
+}
+
+
+.row-cell {
+  margin-right: 10px;
+  width: 100px;
+  float:left;
+  height: 100px;
+  text-align: center;
+  border-style: solid;
+  border-radius: 100%;
+}
+
+hr {
+  display:block;
+  height:0px;
+  margin-top: 50px;
+  max-width: 25%;
+  border-top: 3px solid black;
+}
