@@ -15,18 +15,62 @@
   border-style: none;
 }
 
-.item{
+div.item{
   width: 400px;
   height: 400px;
 }
 
-table{
+#nav{
   padding-top: 20px;
 }
+@media all and (min-width: 1300px){
+  #portfolio-1c div{
+    border: 2px solid black;
+    display: none;
+  }
 
-#portfolio-3c div{
-  border: 1px solid black;
+  #portfolio-2c div{
+    border: 2px solid black;
+    display: none;
+  }
 
+  #portfolio-3c div{
+    border: 2px solid black;
+    display: block;
+  }
+}
+@media all and (min-width: 900px) and (max-width: 1299px){
+  #portfolio-1c div{
+    border: 2px solid black;
+    display: none;
+  }
+
+  #portfolio-2c div{
+    border: 2px solid black;
+    display: block;
+  }
+
+  #portfolio-3c div{
+    border: 2px solid black;
+    display: none;
+  }
+}
+
+@media all and (max-width: 899px){
+  #portfolio-1c div{
+    border: 2px solid black;
+    display: block;
+  }
+
+  #portfolio-2c div{
+    border: 2px solid black;
+    display: none;
+  }
+
+  #portfolio-3c div{
+    border: 2px solid black;
+    display: none;
+  }
 }
 
 
