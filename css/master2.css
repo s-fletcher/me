@@ -6,7 +6,6 @@
 
 #title{
   font-size: 50px;
-  background-color: red;
   text-align: center;
   font-weight: 700;
   margin-top: 30px;
@@ -14,6 +13,29 @@
   max-width: 100%;
   max-height: 30px;
   border-style: none;
+}
+
+table{
+  /* border: 1px solid black; */
+}
+
+#content td{
+  /* border: 1px solid black; */
+  padding: 0;
+  margin: 0;
+  line-height: 15px;
+}
+#content p{
+  /* border: 1px solid black; */
+  padding: 0;
+  margin: 0;
+  line-height: 13px;
+}
+#content a{
+  /* border: 1px solid black; */
+  padding: 0;
+  margin: 0;
+  line-height: 10px;
 }
 
 div.item{
@@ -80,30 +102,30 @@ div.item{
 }
 
 
-@media all and (min-width: 960px){
+/* @media all and (min-width: 960px){
   #content{
-    max-width: 30%;
+    max-width: 5vw;
   }
 }
 
 @media all and (max-width: 959px){
   #content{
-    max-width: 55%;
+    max-width: 5vw;
   }
-}
+} */
 
 #content{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px;
   /* border: 1px solid black; */
   text-align: left;
   line-height: 1px;
+  width: 800px;
 }
 
 #line{
   height: 1px;
   width: 60%;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 50px;
   padding: 0;
   background-color: #939393;
@@ -113,6 +135,9 @@ div.item{
 a{
   text-decoration: none;
   color: black;
+}
+a:hover.hoverable{
+  text-decoration: underline;
 }
 
 th.nav{
