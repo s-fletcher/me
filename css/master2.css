@@ -5,7 +5,7 @@
 }
 
 #title{
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   font-weight: 700;
   margin-top: 30px;
@@ -20,17 +20,17 @@ table{
 }
 
 #content td{
-  /* border: 1px solid black; */
   padding: 0;
   margin: 0;
   line-height: 15px;
+  /* border: 1px solid black; */
 }
 #content p{
   /* border: 1px solid black; */
   padding: 0;
   margin: 0;
   line-height: 13px;
-  word-wrap: break-word;
+
 }
 #content a{
   /* border: 1px solid black; */
@@ -40,8 +40,10 @@ table{
 }
 
 div.item{
-  width: 400px;
-  height: 400px;
+  width: 25vw;
+  height: 25vw;
+  max-width: 400px;
+  max-height: 400px;
   overflow: hidden;
 }
 
@@ -51,11 +53,14 @@ div.item-thumb:hover{
 
 div.item-thumb{
   border-style: none;
-  width:400px;
-  height:171px;
-  background-size: cover;
+  width:25vw;
+  max-width: 400px;
+  max-height: 171px;
+  height: calc(25vw*9/21);
+  background-size: contain;
   transition: transform 0.1s ease-in-out;
 }
+
 
 #nav{
   padding-top: 20px;
@@ -63,7 +68,7 @@ div.item-thumb{
 
 #portfolio-1c div{
   border: 2px solid black;
-  display: block;
+  display: none;
 }
 #portfolio-2c div{
   border: 2px solid black;
@@ -71,10 +76,50 @@ div.item-thumb{
 }
 #portfolio-3c div{
   border: 2px solid black;
-  display: none;
+  display: block;
 }
 
-@media all and (min-width: 1300px){
+@media all and (min-width: 1600px) {
+  p.item-title{
+    padding-top: 4px;
+    text-align: center;
+    font-size: 40px;
+  }
+  p.item-category{
+    font-size: 19px;
+    font-style: italic;
+    text-align: center;
+  }
+  p.item-date{
+    font-size: 11px;
+    font-style: italic;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 8px;
+  }
+}
+
+@media all and (max-width: 1599px) {
+  p.item-title{
+    padding-top: 1%;
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  p.item-category{
+    font-size: 1.2vw;
+    font-style: italic;
+    text-align: center;
+  }
+  p.item-date{
+    font-size: .7vw;
+    font-style: italic;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+}
+
+/* @media all and (min-width: 1300px){
   #portfolio-1c div{
     display: none;
   }
@@ -133,9 +178,15 @@ div.item-thumb{
     margin-right: 30px;
     margin-top: 35px;
   }
+  #content{
+    padding: 50px;
+    text-align: left;
+    line-height: 1px;
+    width: 800px;
+  }
 }
 
-@media handheld and (max-width: 813px){
+@media screen and (max-width: 813px){
   #portfolio-1c div{
     display: none;
   }
@@ -175,29 +226,53 @@ div.item-thumb{
     margin-right: 7px;
     margin-top: -5px;
   }
-
-}
+  #content{
+    padding: 50px;
+    text-align: left;
+    line-height: 1px;
+    width: 80%;
+  }
+} */
 
 /* @media all and (min-width: 960px){
   #content{
     max-width: 5vw;
   }
 }
-
-@media all and (max-width: 959px){
+*/
+@media all and (max-width: 600px){
   #content{
-    max-width: 5vw;
+    text-align: left;
+    line-height: 1px;
+    max-width: 90vw;
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
   }
-} */
-
-#content{
-  padding: 50px;
-  /* border: 1px solid black; */
-  text-align: left;
-  line-height: 1px;
-  width: 800px;
+  td.bio-name{
+    width: 265px;
+  }
+  td.bio-year{
+    width: 109px;
+  }
 }
-
+@media all and (min-width: 601px){
+  #content{
+    text-align: left;
+    line-height: 1px;
+    width: 800px;
+    padding: 50px;
+  }
+  td.bio-name{
+    width: 360px;
+  }
+  td.bio-year{
+    width: 200px;
+  }
+}
 #line{
   height: 1px;
   width: 60%;
@@ -219,7 +294,7 @@ a:hover.hoverable{
 th.nav{
   /* border-style: solid; */
   text-align: left;
-  width: 40px
+  width: 40px;
 }
 
 /* #portfolio ul{
