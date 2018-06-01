@@ -74,10 +74,7 @@ div.item-thumb{
   border: 2px solid black;
   display: none;
 }
-#portfolio-3c div{
-  border: 2px solid black;
-  display: block;
-}
+
 
 @media all and (min-width: 1600px) {
   p.item-title{
@@ -258,6 +255,10 @@ div.item-thumb{
   td.bio-year{
     width: 109px;
   }
+  #portfolio-3c div{
+    border: 1px solid black;
+    display: block;
+  }
 }
 @media all and (min-width: 601px){
   #content{
@@ -271,6 +272,10 @@ div.item-thumb{
   }
   td.bio-year{
     width: 200px;
+  }
+  #portfolio-3c div{
+    border: 2px solid black;
+    display: block;
   }
 }
 #line{
