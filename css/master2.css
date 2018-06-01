@@ -135,7 +135,7 @@ div.item-thumb{
   }
 }
 
-@media screen and (max-width: 813px){
+@media handheld and (max-width: 813px){
   #portfolio-1c div{
     display: none;
   }
