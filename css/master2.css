@@ -115,7 +115,7 @@ div.item-thumb{
   }
 }
 
-@media all and (min-width: 700px){
+@media all and (min-width: 814px){
   p.item-title{
     padding-top: 20px;
     text-align: center;
@@ -135,7 +135,7 @@ div.item-thumb{
   }
 }
 
-@media all and (max-width: 699px){
+@media screen and (max-width: 813px){
   #portfolio-1c div{
     display: none;
   }
