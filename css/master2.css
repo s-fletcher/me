@@ -58,6 +58,7 @@ div.item-thumb{
   max-height: 171px;
   height: calc(25vw*9/21);
   background-size: contain;
+  background-repeat: no-repeat;
   transition: transform 0.1s ease-in-out;
 }
 
