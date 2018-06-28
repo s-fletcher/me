@@ -19,6 +19,15 @@ table{
   /* border: 1px solid black; */
 }
 
+#content-title{
+  font-weight: 400;
+  font-size: 30px;
+}
+#content-vid{
+  padding-top: 30px;
+  width: 100%;
+}
+
 #content td{
   padding: 0;
   margin: 0;
@@ -275,7 +284,7 @@ div.item-thumb{
     width: 200px;
   }
   #portfolio-3c div{
-    border: 2px solid black;
+    border: 0px solid black; /* CHANGE THIS IF U WANT BORDER */
     display: block;
   }
 }
