@@ -11,6 +11,7 @@
   margin-top: 30px;
   padding-bottom: 10px;
   max-width: 100%;
+  min-width: 259px;
   max-height: 30px;
   border-style: none;
 }
@@ -250,7 +251,7 @@ div.item-thumb{
   }
 }
 */
-@media all and (max-width: 600px){
+@media all and (max-width: 714px){
   #content{
     text-align: left;
     line-height: 1px;
@@ -262,18 +263,13 @@ div.item-thumb{
     padding-bottom: 50px;
     margin: 0;
   }
-  td.bio-name{
-    width: 265px;
-  }
-  td.bio-year{
-    width: 109px;
-  }
+
   #portfolio-3c div{
     border: 1px solid black;
     display: block;
   }
 }
-@media all and (min-width: 601px){
+@media all and (min-width: 715px){
   #content{
     text-align: left;
     line-height: 1px;
