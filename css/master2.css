@@ -291,14 +291,14 @@ div.item-thumb{
     display: block;
   }
 }
-/* #line{
+#line{
   height: 1px;
   width: 60%;
   margin-top: 20px;
   margin-bottom: 50px;
   padding: 0;
   background-color: #939393;
-} */
+}
 
 
 a{
