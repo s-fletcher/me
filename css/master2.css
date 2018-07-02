@@ -287,7 +287,7 @@ div.item-thumb{
     width: 200px;
   }
   #portfolio-3c div{
-    border: 0px solid black; /* CHANGE THIS IF U WANT BORDER */
+    border: 1px solid black; /* CHANGE THIS IF U WANT BORDER */
     display: block;
   }
 }
@@ -299,7 +299,6 @@ div.item-thumb{
   padding: 0;
   background-color: #939393;
 }
-
 
 a{
   text-decoration: none;
