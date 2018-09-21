@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="../css/master2.css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <link rel="icon" type="image/png" href="../website-icon.png">
+  </head>
+
+  <body>
+    <div id="canvas" align="center">
+      <div id="title" align="center">
+        <a href="/">SAM FLETCHER</a>
+      </div>
+      <div id="nav">
+        <table align="center">
+          <th class="nav">
+            <a class="hoverable" href="../bio">bio</a>
+          </th>
+          <th class="nav">
+            <a class="hoverable" href="../contact">contact</a>
+          </th>
+        </table>
+      </div>
+
+      <div id="content">
+        <ul style="list-style-type: none;padding-bottom: 30px; padding-left: 0;">
+          <li style="float:left;">
+            <p class="content-title">CALCULATOR</p>
+          </li>
+          <li style="float:right; padding-top:10px;">
+            <p>September 2018</p>
+          </li>
+        </ul>
+
+        <div style="padding:42.71% 0 30px 0;position:relative;">
+          <div style="height:100%;left:0;position:absolute;top:0;width:100%;">
+            <div style="height:100%;position:relative;width:100%">
+              <div style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                  <img src="../thumbnails/calculator-showcase.gif" style="height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <table width="100%" style="padding-top:50px;">
+          <tr>
+            <td width="50%" valign="top">
+              <p class="content-subtitle">CREDITS</p>
+              <table>
+                <tr>
+                  <td>Created by</td>
+                  <td id="credits">Sam Fletcher</td>
+                </tr>
+                <tr>
+                  <td>Source code: </td>
+                  <td id="credits"><a class="hoverable" target="_blank" style="color:blue;" href="https://github.com/s-fletcher/calculator">via github</a></td>
+                </tr>
+                <tr>
+                  <td>Try it yourself: </td>
+                  <td id="credits"><a class="hoverable" href="../downloads/Calculator.jar" style="color:blue;">download</a></td>
+              </table>
+            </td>
+            <td width="50%" valign="top">
+              <p class="content-subtitle">CONTEXT</p>
+              <p style="line-height: 15px;">
+                A personal project that I created on the side during my first
+                semester of college. I created this to test my knowledge with
+                GUI's and ArrayList manipulation.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="line"></div>
+
+      <div w3-include-html="/projects/portfolio" style="padding-bottom: 50px;"></div>
+
+    </div>
+
+    <script>
+        w3IncludeHTML();
+    </script>
+
+  </body>
+</html>
