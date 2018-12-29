@@ -8,9 +8,12 @@ a {
   text-decoration: inherit;
 }
 
-h1
+p
 {
-
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .center
