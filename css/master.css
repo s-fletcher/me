@@ -1,0 +1,59 @@
+div{
+  font-family: "Courier New", Courier, monospace;
+  line-height: 10%;
+}
+div.main{
+  animation:
+    fadeInBlack 3s 1;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+p.title{
+  font-size: 30px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+p.author{
+  font-size: 20px;
+  letter-spacing: -3px;
+  margin:0;
+}
+p.comingSoon{
+  font-size: 16px;
+  color: #c6052c;
+  animation: fadeInRed 4s 1;
+}
+
+div.footer{
+  position: fixed;
+  font-weight: bolder;
+  text-align: right;
+  bottom: 5%;
+  right: 5%;
+}
+
+@keyframes fadeInBlack{
+  0%{
+    color: white;
+  }
+  100%{
+    color: black;
+  }
+}
+@keyframes fadeInRed{
+  0%{
+   color: white;
+  }
+  30%{
+    color: white;
+  }
+  100%{
+    color: #c6052c;
+  }
+}

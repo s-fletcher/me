@@ -1,0 +1,21 @@
+Instructions for a new project
+
+1. Create thumbnail - 1920x822 .jpg
+2. Create a showcase (if needed) - any size .jpg
+3. Copy a folder from an old project and edit the following:
+  - line 4: <title>project name</title>
+  - line 31: <p>PROJECT NAME</p>
+  - line 34: <p>Date (ex: September 2018)
+  - from line 37 and below, add what is desired.
+4. Copy a html file from the projects folder and edit the following:
+  - line 1: href="/project-name"
+  - line 3: url('/thumbnails/project-name-thumbnail.jpg')
+  - line 7: Project Name
+  - line 10: type of project
+  - line 13: Date (ex: Sep. 2018)
+5. Add space for new project in projects/portfolio.html
+  - Copy from line 68 - line 71 (if on same line)
+    - If on new line, copy line 67 - 71 and add </tr>
+  - Paste at bottom
+  - Change w3-include-html="/projects/project-name.html"
+6. Commit and push!
