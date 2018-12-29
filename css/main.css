@@ -1,0 +1,97 @@
+body
+{
+  margin: 51.3px 0 0 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+p
+{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.center
+{
+  width: 100%;
+}
+
+svg
+{
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  margin-left: -250px;
+}
+
+#face-outline
+{
+  animation: fade-in 5s;
+}
+
+#header-title
+{
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #aaaaaa;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.2em;
+  background: white;
+  animation: slide-in-from-top 3s;
+  animation-timing-function: ease;
+}
+
+#header
+{
+  background: #00A8E8;
+  border-bottom: 1px solid #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+}
+
+/* ---------- */
+/* ANIMATIONS */
+/* ---------- */
+
+@keyframes fade-in {
+  0%
+  {
+    opacity: 0;
+  }
+  5%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-from-top
+{
+  0%
+  {
+    margin-top: -8px;
+    opacity: 0;
+    border-bottom: 0px solid #aaaaaa;
+  }
+  99%
+  {
+    border-bottom: 0px solid #aaaaaa;
+  }
+  100%
+  {
+    margin-top: 0;
+    opacity: 1;
+    border-bottom: 1px solid #aaaaaa;
+  }
+}
