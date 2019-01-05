@@ -1,0 +1,172 @@
+body
+{
+  margin: 51.3px 0 0 0;
+  background-color: #eeeeee;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+p
+{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.center
+{
+  width: 100%;
+}
+
+svg
+{
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  margin-left: -250px;
+}
+
+#face
+{
+  stroke-dasharray: 13150;
+  stroke-dashoffset: -300;
+  animation: outline-face 4s;
+}
+#face-fill
+{
+  opacity: 0;
+  animation: fade-in 2s 4s;
+  animation-fill-mode: forwards;
+}
+#glasses
+{
+  stroke-dasharray: 2780;
+  stroke-dashoffset: 0;
+  animation: outline-glasses 4s;
+}
+#glasses-fill
+{
+  opacity: 0;
+  animation: fade-in 2s 4s;
+  animation-fill-mode: forwards;
+}
+#ear
+{
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 0;
+  animation: outline-ear 4s;
+}
+
+@keyframes outline-face {
+0% {
+  stroke-dashoffset: 12850;
+  }
+100% {
+  stroke-dashoffset: -300;
+  }
+}
+
+@keyframes outline-glasses {
+0% {
+  stroke-dashoffset: 2780;
+  }
+10% {
+  stroke-dashoffset: 2780;
+  }
+70% {
+  stroke-dashoffset: 0;
+  }
+}
+
+@keyframes outline-ear {
+0% {
+  stroke-dashoffset: 1100;
+  }
+30% {
+  stroke-dashoffset: 1100;
+  }
+80% {
+  stroke-dashoffset: 0;
+  }
+}
+
+.fade-in
+{
+  animation: fade-in 4s;
+}
+
+#about-me-container
+{
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  top: 600px;
+  height: 500px;
+  width: 800px;
+  background: #264653;
+}
+
+#header-title
+{
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #aaaaaa;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.2em;
+  background: white;
+  animation: slide-in-from-top 3s;
+  animation-timing-function: ease;
+}
+
+#header
+{
+  background: #E9C46A;
+  border-bottom: 1px solid #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+}
+
+/* ---------- */
+/* ANIMATIONS */
+/* ---------- */
+
+@keyframes fade-in {
+  0%
+  {
+    opacity: 0;
+  }
+  5%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-from-top
+{
+  0%
+  {
+    margin-top: -8px;
+    opacity: 0;
+    border-bottom: 0px solid #aaaaaa;
+  }
+  99%
+  {
+    border-bottom: 0px solid #aaaaaa;
+  }
+  100%
+  {
+    margin-top: 0;
+    opacity: 1;
+    border-bottom: 1px solid #aaaaaa;
+  }
+}
