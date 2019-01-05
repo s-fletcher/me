@@ -4,7 +4,6 @@ canvas.height = 450;
 var lines = 0;
 
 var c = canvas.getContext('2d');
-c.globalAlpha = 0;
 
 window.addEventListener('resize', function () {
   canvas.width = window.innerWidth;
@@ -133,10 +132,6 @@ function animate () {
           lines++;
         }
     }
-  }
-  if(c.globalAlpha < 1)
-  {
-    c.globalAlpha += 0.01;
   }
   for(var i = 0; i < circleArray.length; i++)
   {

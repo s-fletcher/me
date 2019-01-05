@@ -4,7 +4,8 @@ body
   background-color: #eeeeee;
 }
 
-a {
+a
+{
   color: inherit;
   text-decoration: inherit;
 }
@@ -36,29 +37,95 @@ svg
   stroke-dashoffset: -300;
   animation: outline-face 4s;
 }
+
 #face-fill
 {
   opacity: 0;
   animation: fade-in 2s 4s;
   animation-fill-mode: forwards;
 }
+
 #glasses
 {
   stroke-dasharray: 2780;
   stroke-dashoffset: 0;
   animation: outline-glasses 4s;
 }
+
 #glasses-fill
 {
   opacity: 0;
   animation: fade-in 2s 4s;
   animation-fill-mode: forwards;
 }
+
 #ear
 {
   stroke-dasharray: 1100;
   stroke-dashoffset: 0;
   animation: outline-ear 4s;
+}
+
+#about-me-container
+{
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  top: 600px;
+  height: 500px;
+  width: 800px;
+  background: #264653;
+}
+
+#header-title
+{
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #aaaaaa;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.2em;
+  background: white;
+}
+
+#header-text
+{
+  animation: fade-in 2s;
+}
+
+#header
+{
+  background: #E9C46A;
+  border-bottom: 1px solid #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+}
+
+#stars
+{
+  position: absolute;
+  top: 502px;
+  border: 1px black solid;
+}
+
+/* ---------- */
+/* ANIMATIONS */
+/* ---------- */
+
+@keyframes fade-in {
+  0%
+  {
+    opacity: 0;
+  }
+  5%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
 }
 
 @keyframes outline-face {
@@ -91,82 +158,5 @@ svg
   }
 80% {
   stroke-dashoffset: 0;
-  }
-}
-
-.fade-in
-{
-  animation: fade-in 4s;
-}
-
-#about-me-container
-{
-  position: absolute;
-  left: 50%;
-  margin-left: -400px;
-  top: 600px;
-  height: 500px;
-  width: 800px;
-  background: #264653;
-}
-
-#header-title
-{
-  position: fixed;
-  top: 0;
-  border-bottom: 1px solid #aaaaaa;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  text-align: center;
-  width: 100%;
-  letter-spacing: 0.2em;
-  background: white;
-  animation: slide-in-from-top 3s;
-  animation-timing-function: ease;
-}
-
-#header
-{
-  background: #E9C46A;
-  border-bottom: 1px solid #aaaaaa;
-  border-top: 1px solid #aaaaaa;
-}
-
-/* ---------- */
-/* ANIMATIONS */
-/* ---------- */
-
-@keyframes fade-in {
-  0%
-  {
-    opacity: 0;
-  }
-  5%
-  {
-    opacity: 0;
-  }
-  100%
-  {
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in-from-top
-{
-  0%
-  {
-    margin-top: -8px;
-    opacity: 0;
-    border-bottom: 0px solid #aaaaaa;
-  }
-  99%
-  {
-    border-bottom: 0px solid #aaaaaa;
-  }
-  100%
-  {
-    margin-top: 0;
-    opacity: 1;
-    border-bottom: 1px solid #aaaaaa;
   }
 }
