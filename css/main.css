@@ -24,28 +24,75 @@ p
 
 svg
 {
-  /* border: 1px solid black; */
   position: absolute;
   top: 52px;
   left: 50%;
   margin-left: -250px;
 }
 
-/* #face-outline
+#face
 {
-  stroke-dasharray: 40000;
+  stroke-dasharray: 13150;
+  stroke-dashoffset: -300;
+  animation: outline-face 4s;
+}
+#face-fill
+{
+  opacity: 0;
+  animation: fade-in 2s 4s;
+  animation-fill-mode: forwards;
+}
+#glasses
+{
+  stroke-dasharray: 2780;
   stroke-dashoffset: 0;
-  animation: dash 5s ;
+  animation: outline-glasses 4s;
+}
+#glasses-fill
+{
+  opacity: 0;
+  animation: fade-in 2s 4s;
+  animation-fill-mode: forwards;
+}
+#ear
+{
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 0;
+  animation: outline-ear 4s;
 }
 
-@keyframes dash {
-from {
-  stroke-dashoffset: 40000;
+@keyframes outline-face {
+0% {
+  stroke-dashoffset: 12850;
   }
-to {
+100% {
+  stroke-dashoffset: -300;
+  }
+}
+
+@keyframes outline-glasses {
+0% {
+  stroke-dashoffset: 2780;
+  }
+10% {
+  stroke-dashoffset: 2780;
+  }
+70% {
   stroke-dashoffset: 0;
   }
-} */
+}
+
+@keyframes outline-ear {
+0% {
+  stroke-dashoffset: 1100;
+  }
+30% {
+  stroke-dashoffset: 1100;
+  }
+80% {
+  stroke-dashoffset: 0;
+  }
+}
 
 .fade-in
 {
