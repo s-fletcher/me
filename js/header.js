@@ -1,6 +1,7 @@
 var canvas = document.getElementById('header');
 canvas.width = window.innerWidth;
 canvas.height = 450;
+var lines = 0;
 
 var c = canvas.getContext('2d');
 c.globalAlpha = 0;
@@ -20,6 +21,7 @@ function Circle(x, y, dx, dy, radius, radiusMax, color)
   this.radius = radius;
   this.radiusMax = radiusMax;
   this.color = color;
+  this.lineWidth = (Math.random() * .2) + .05;
 
   this.draw = function()
   {
@@ -45,14 +47,34 @@ function Circle(x, y, dx, dy, radius, radiusMax, color)
     {
       this.radius += this.dr;
     }
+
+
     this.draw();
+  }
+}
+
+function drawLine(circle1, circle2)
+{
+  if(lines < 1000)
+  {
+    var grad = c.createLinearGradient(circle1.x, circle1.y, circle2.x, circle2.y);
+    grad.addColorStop(0, colors[circle1.color]);
+    grad.addColorStop(1, colors[circle2.color]);
+    c.strokeStyle = grad;
+    c.lineWidth = circle1.lineWidth;
+    c.beginPath();
+    c.moveTo(circle1.x, circle1.y);
+    c.lineTo(circle2.x, circle2.y);
+    c.stroke();
+    circle1.lineCount++;
+    circle2.lineCount++;
   }
 }
 
 // var colors = ['rgb(43, 45, 66)', 'rgb(141, 153, 174)', 'rgb(182, 190, 203)'];
 // var colors = ['rgb(233, 196, 106)', 'rgb(244, 162, 97)', 'rgb(231, 111, 81)'];
 // var colors = ['#003459', '#00171F', '#007EA7'];
-var colors = ['#ffffff', '#eeeeee', '#dddddd'];
+var colors = ['#eeeeee', '#f9f9f9', '#ffffff'];
 var circleArray;
 var x;
 var y;
@@ -86,6 +108,7 @@ circleArray.push(new Circle(x, y, dx, dy, 0, radius, color));
 function animate () {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, canvas.width, canvas.height);
+  lines = 0;
   if(circleArray.length < canvas.width/3)
   {
     for(var i = 0; i < 5; i++)
@@ -97,6 +120,18 @@ function animate () {
       radius = Math.random() * 2 + 0.01;
       color = Math.floor(Math.random() * 3);
       circleArray.push(new Circle(x, y, dx, dy, 0, radius, color));
+    }
+  }
+  for(var i1 = 0; i1 < circleArray.length; i1++)
+  {
+    for(var i2 = 0; i2 < circleArray.length; i2++)
+    {
+      if(Math.abs(circleArray[i1].x - circleArray[i2].x) +
+        Math.abs(circleArray[i1].y - circleArray[i2].y) < 70)
+        {
+          drawLine(circleArray[i1], circleArray[i2]);
+          lines++;
+        }
     }
   }
   if(c.globalAlpha < 1)

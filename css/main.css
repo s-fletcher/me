@@ -1,6 +1,7 @@
 body
 {
   margin: 51.3px 0 0 0;
+  background-color: #eeeeee;
 }
 
 a {
@@ -30,9 +31,36 @@ svg
   margin-left: -250px;
 }
 
-#face-outline
+/* #face-outline
 {
-  animation: fade-in 5s;
+  stroke-dasharray: 40000;
+  stroke-dashoffset: 0;
+  animation: dash 5s ;
+}
+
+@keyframes dash {
+from {
+  stroke-dashoffset: 40000;
+  }
+to {
+  stroke-dashoffset: 0;
+  }
+} */
+
+.fade-in
+{
+  animation: fade-in 4s;
+}
+
+#about-me-container
+{
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  top: 600px;
+  height: 500px;
+  width: 800px;
+  background: #264653;
 }
 
 #header-title
@@ -52,7 +80,7 @@ svg
 
 #header
 {
-  background: #00A8E8;
+  background: #E9C46A;
   border-bottom: 1px solid #aaaaaa;
   border-top: 1px solid #aaaaaa;
 }
