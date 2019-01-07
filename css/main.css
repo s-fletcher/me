@@ -33,8 +33,8 @@ svg
 
 #face
 {
-  stroke-dasharray: 13150;
-  stroke-dashoffset: -300;
+  stroke-dasharray: 13550;
+  stroke-dashoffset: 0;
   animation: outline-face 4s;
 }
 
@@ -130,10 +130,10 @@ svg
 
 @keyframes outline-face {
 0% {
-  stroke-dashoffset: 12850;
+  stroke-dashoffset: 13550;
   }
 100% {
-  stroke-dashoffset: -300;
+  stroke-dashoffset: 0;
   }
 }
 

@@ -7,18 +7,16 @@ var c = canvas.getContext('2d');
 
 window.addEventListener('resize', function () {
   canvas.width = window.innerWidth;
-  spawnArray(1);
+  spawnArray(canvas.width/3, true);
 });
 
-function Circle(x, y, dx, dy, radius, radiusMax, color)
+function Circle(x, y, dx, dy, radius, color)
 {
   this.x = x;
   this.y = y;
   this.dx = dx;
   this.dy = dy;
-  this.dr = .01;
   this.radius = radius;
-  this.radiusMax = radiusMax;
   this.color = color;
   this.lineWidth = (Math.random() * .2) + .05;
 
@@ -42,11 +40,6 @@ function Circle(x, y, dx, dy, radius, radiusMax, color)
     }
     this.x += this.dx;
     this.y += this.dy;
-    if(this.radius < this.radiusMax)
-    {
-      this.radius += this.dr;
-    }
-
 
     this.draw();
   }
@@ -54,7 +47,7 @@ function Circle(x, y, dx, dy, radius, radiusMax, color)
 
 function drawLine(circle1, circle2)
 {
-  if(lines < 1000)
+  if(lines < canvas.width/2)
   {
     var grad = c.createLinearGradient(circle1.x, circle1.y, circle2.x, circle2.y);
     grad.addColorStop(0, colors[circle1.color]);
@@ -81,28 +74,24 @@ var dx;
 var dy;
 var radius;
 var color;
-function spawnArray()
+function spawnArray(amount, createNew)
 {
-  circleArray = [];
-  for (var i = 0; i < canvas.width/3; i++) {
+  if(createNew == true)
+  {
+    circleArray = [];
+  }
+  for (var i = 0; i < amount; i++) {
     x = Math.random() * (canvas.width - radius * 2) + radius;
     y = Math.random() * (canvas.height - radius * 2) + radius;
     dx = (Math.random() * .7) - .35;
     dy = (Math.random() * .7) - .35;
     radius = Math.random() * 2 + 0.01;
     color = Math.floor(Math.random() * 3);
-    circleArray.push(new Circle(x, y, dx, dy, radius, radius, color));
+    circleArray.push(new Circle(x, y, dx, dy, radius, color));
   }
 }
 
-circleArray = [];
-x = Math.random() * (canvas.width - radius * 2) + radius;
-y = Math.random() * (canvas.height - radius * 2) + radius;
-dx = (Math.random() * .7) - .35;
-dy = (Math.random() * .7) - .35;
-radius = Math.random() * 2 + 0.01;
-color = Math.floor(Math.random() * 3);
-circleArray.push(new Circle(x, y, dx, dy, 0, radius, color));
+spawnArray(1, true);
 
 function animate () {
   requestAnimationFrame(animate);
@@ -110,16 +99,7 @@ function animate () {
   lines = 0;
   if(circleArray.length < canvas.width/3)
   {
-    for(var i = 0; i < 5; i++)
-    {
-      x = Math.random() * (canvas.width - radius * 2) + radius;
-      y = Math.random() * (canvas.height - radius * 2) + radius;
-      dx = (Math.random() * .7) - .35;
-      dy = (Math.random() * .7) - .35;
-      radius = Math.random() * 2 + 0.01;
-      color = Math.floor(Math.random() * 3);
-      circleArray.push(new Circle(x, y, dx, dy, 0, radius, color));
-    }
+    spawnArray(5, false);
   }
   for(var i1 = 0; i1 < circleArray.length; i1++)
   {
