@@ -4,7 +4,8 @@ body
   background-color: #eeeeee;
 }
 
-a {
+a
+{
   color: inherit;
   text-decoration: inherit;
 }
@@ -32,71 +33,37 @@ svg
 
 #face
 {
-  stroke-dasharray: 13150;
-  stroke-dashoffset: -300;
+  stroke-dasharray: 13550;
+  stroke-dashoffset: 0;
   animation: outline-face 4s;
 }
+
 #face-fill
 {
   opacity: 0;
   animation: fade-in 2s 4s;
   animation-fill-mode: forwards;
 }
+
 #glasses
 {
   stroke-dasharray: 2780;
   stroke-dashoffset: 0;
   animation: outline-glasses 4s;
 }
+
 #glasses-fill
 {
   opacity: 0;
   animation: fade-in 2s 4s;
   animation-fill-mode: forwards;
 }
+
 #ear
 {
   stroke-dasharray: 1100;
   stroke-dashoffset: 0;
   animation: outline-ear 4s;
-}
-
-@keyframes outline-face {
-0% {
-  stroke-dashoffset: 12850;
-  }
-100% {
-  stroke-dashoffset: -300;
-  }
-}
-
-@keyframes outline-glasses {
-0% {
-  stroke-dashoffset: 2780;
-  }
-10% {
-  stroke-dashoffset: 2780;
-  }
-70% {
-  stroke-dashoffset: 0;
-  }
-}
-
-@keyframes outline-ear {
-0% {
-  stroke-dashoffset: 1100;
-  }
-30% {
-  stroke-dashoffset: 1100;
-  }
-80% {
-  stroke-dashoffset: 0;
-  }
-}
-
-.fade-in
-{
-  animation: fade-in 4s;
 }
 
 #about-me-container
@@ -121,8 +88,11 @@ svg
   width: 100%;
   letter-spacing: 0.2em;
   background: white;
-  animation: slide-in-from-top 3s;
-  animation-timing-function: ease;
+}
+
+#header-text
+{
+  animation: fade-in 2s;
 }
 
 #header
@@ -130,6 +100,13 @@ svg
   background: #E9C46A;
   border-bottom: 1px solid #aaaaaa;
   border-top: 1px solid #aaaaaa;
+}
+
+#stars
+{
+  position: absolute;
+  top: 502px;
+  border: 1px black solid;
 }
 
 /* ---------- */
@@ -151,22 +128,35 @@ svg
   }
 }
 
-@keyframes slide-in-from-top
-{
-  0%
-  {
-    margin-top: -8px;
-    opacity: 0;
-    border-bottom: 0px solid #aaaaaa;
+@keyframes outline-face {
+0% {
+  stroke-dashoffset: 13550;
   }
-  99%
-  {
-    border-bottom: 0px solid #aaaaaa;
+100% {
+  stroke-dashoffset: 0;
   }
-  100%
-  {
-    margin-top: 0;
-    opacity: 1;
-    border-bottom: 1px solid #aaaaaa;
+}
+
+@keyframes outline-glasses {
+0% {
+  stroke-dashoffset: 2780;
+  }
+10% {
+  stroke-dashoffset: 2780;
+  }
+70% {
+  stroke-dashoffset: 0;
+  }
+}
+
+@keyframes outline-ear {
+0% {
+  stroke-dashoffset: 1100;
+  }
+30% {
+  stroke-dashoffset: 1100;
+  }
+80% {
+  stroke-dashoffset: 0;
   }
 }
