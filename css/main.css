@@ -231,7 +231,7 @@ and (min-width : 1875px) {
   height: 500px;
   width: 500px;
   border-radius: 5px;
-  box-shadow: -20px 50px 200px #cccccc;
+  box-shadow: -20px 50px 100px #e5e5e5;
 }
 
 .item-thumbnail
