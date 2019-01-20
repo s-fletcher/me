@@ -3,13 +3,14 @@
   <head>
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200|PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla|PT+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="utf-8">
     <title>Sam Fletcher</title>
   </head>
   <body>
     <canvas id="header"></canvas>
-    <div class="center" height="425" margin-top="75px">
+    <div style="width:100%;" height="425" margin-top="75px">
 
       <!-- NOTE DONT PLAY ANIMATIONS AFTER 960px WIDE! -->
 
@@ -35,7 +36,7 @@
     </div>
 
     <div id="about-me-container">
-      <div id="terminal-window">
+      <div id="terminal-window" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
         <p id="terminal-title">sam-fletcher/about-me.txt</p>
         <div class="terminal-buttons" id="red-button" style="margin-left: -25px;" hover="background:red;">
         </div>
@@ -69,12 +70,75 @@
     </div>
 
     <div id="my-work">
+      <h1 id="my-work-text" data-aos="fade-right" data-aos-once="true">MY WORK</h1>
+      <div id="my-work-container">
+
+        <div class="my-work-item" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+          <div class="item-thumbnail">
+          </div>
+          <div class="item-info">
+            <p class="item-info"><strong>Calculator</strong> java project that is a functional calculator</p>
+          </div>
+        </div>
+
+        <div class="my-work-item" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
+          <div class="item-thumbnail">
+          </div>
+          <div class="item-info">
+            <p class="item-info"><strong>Security Camera</strong> made from a Raspberry Pi 3 using the python language</p>
+          </div>
+        </div>
+
+        <div class="my-work-item" data-aos="fade-in" data-aos-delay="300" data-aos-once="true">
+          <div class="item-thumbnail">
+          </div>
+          <div class="item-info">
+            <p class="item-info"><strong>Mesonet Statistics</strong> java project that calculates statistics based off weather data</p>
+          </div>
+        </div>
+
+        <div class="my-work-item" data-aos="fade-in" data-aos-delay="400" data-aos-once="true">
+          <div class="item-thumbnail">
+          </div>
+          <div class="item-info">
+            <p class="item-info"><strong>White Shirts</strong> film about an isolated man who is recruited into a cult</p>
+          </div>
+        </div>
+
+        <div class="my-work-item" data-aos="fade-in" data-aos-delay="500" data-aos-once="true">
+          <div class="item-thumbnail">
+          </div>
+          <div class="item-info">
+            <p class="item-info"><strong>Life In Between</strong> film about a life that happens in seconds</p>
+          </div>
+        </div>
+
+        <div class="my-work-item" data-aos="fade-in" data-aos-delay="700" data-aos-once="true">
+          <div class="item-thumbnail">
+          </div>
+          <div class="item-info">
+            <p class="item-info"><strong>Baby Driver</strong> film that recreates an Edgar Wright scene</p>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <div id="header-title" class="center">
-      <h1 id="header-text"><a href="#">SAM FLETCHER</a></h1>
+    <div id="footer">
+      <div id="footer-container">
+        <p id="footer-left">© 2018 Sam Fletcher.</p>
+        <p id="footer-right"><a href="mailto:sfletchertx@gmail.com">email</a> // <a href="https://github.com/s-fletcher" target="_blank">github</a> // <a href="https://www.instagram.com/sfletchertx/" target="_blank">instagram</a></p>
+      </div>
     </div>
+
+    <div id="header-title">
+      <p id="header-text"><a href="#">SAM FLETCHER</a></p>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/header.js"> </script>
-
   </body>
 </html>
