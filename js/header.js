@@ -1,5 +1,6 @@
 var canvas = document.getElementById('header');
 canvas.width = window.innerWidth;
+document.getElementById('header-text').innerHTML = canvas.width;
 canvas.height = 450;
 var lines = 0;
 
@@ -7,6 +8,7 @@ var c = canvas.getContext('2d');
 
 window.addEventListener('resize', function () {
   canvas.width = window.innerWidth;
+  document.getElementById('header-text').innerHTML = canvas.width;
   if(canvas.width > 960)
   {
     spawnArray(canvas.width/3, true);
