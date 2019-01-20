@@ -28,7 +28,7 @@ svg
 #face-fill
 {
   opacity: 0;
-  animation: fade-in 2s 4s;
+  animation: fade-in 2s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -42,7 +42,7 @@ svg
 #glasses-fill
 {
   opacity: 0;
-  animation: fade-in 2s 4s;
+  animation: fade-in 2s 3s;
   animation-fill-mode: forwards;
 }
 
