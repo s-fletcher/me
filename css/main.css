@@ -230,10 +230,14 @@ and (min-width : 1875px) {
   background: white;
   height: 500px;
   width: 500px;
+  border-radius: 5px;
+  box-shadow: -20px 50px 200px #cccccc;
 }
 
 .item-thumbnail
 {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background: #cccccc;
   height: 380px;
   width: 100%;
