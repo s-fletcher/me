@@ -305,9 +305,11 @@ a:hover.hoverable{
 }
 
 th.nav{
-  /* border-style: solid; */
-  text-align: left;
-  width: 40px;
+  /* border: 1px solid black; */
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
 }
 
 /* #portfolio ul{
