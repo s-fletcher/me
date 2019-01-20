@@ -88,6 +88,7 @@ svg
 #terminal-window
 {
   position: absolute;
+  max-width: 1000px;
   left: 50%;
   margin-left: -25%;
   top: 100px;
@@ -107,6 +108,13 @@ and (max-width : 1300px) {
     #terminal-window
     {
       margin-left: -325px;
+    }
+}
+@media only screen
+and (min-width : 2000px) {
+    #terminal-window
+    {
+      margin-left: -500px;
     }
 }
 
