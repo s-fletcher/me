@@ -2,12 +2,11 @@ var canvas = document.getElementById('header');
 canvas.width = window.innerWidth;
 canvas.height = 450;
 var lines = 0;
-document.getElementById('header-text').innerHTML = canvas.width;
+document.getElementById('header-text').innerHTML = isMobileDevice();
 var c = canvas.getContext('2d');
-
 window.addEventListener('resize', function () {
   canvas.width = window.innerWidth;
-  document.getElementById('header-text').innerHTML = canvas.width;
+  document.getElementById('header-text').innerHTML = isMobileDevice();
   if(canvas.width > 960)
   {
     spawnArray(canvas.width/3, true);
@@ -20,6 +19,10 @@ window.addEventListener('resize', function () {
     }
   }
 });
+
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
 
 function Circle(x, y, dx, dy, radius, color)
 {
