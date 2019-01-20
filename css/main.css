@@ -209,15 +209,15 @@ and (max-width : 1300px) {
   /* border: 1px solid black; */
   margin-left: 7.5%;
   width: 85%;
-  max-width: 1530px;
+  max-width: 1580px;
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 40px;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 500px);
 }
 
 @media only screen
-and (min-width : 1930px) {
+and (min-width : 1875px) {
     #my-work-container
     {
       margin-left: calc(50% - 756px);
