@@ -111,7 +111,7 @@ function animate () {
     lines = 0;
     if(circleArray.length < canvas.width/3)
     {
-      spawnArray(5, false);
+      spawnArray(1, false);
     }
     for(var i1 = 0; i1 < circleArray.length; i1++)
     {
