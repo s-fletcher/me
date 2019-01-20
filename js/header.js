@@ -3,8 +3,6 @@ canvas.width = window.innerWidth;
 canvas.height = 450;
 var lines = 0;
 var c = canvas.getContext('2d');
-console.log(isMobileDevice());
-
 window.addEventListener('resize', function () {
   canvas.width = window.innerWidth;
     for(var i = 0; i < circleArray.length; i++)
@@ -102,7 +100,7 @@ spawnArray(1, true);
 var isDone = false;
 function animate () {
   requestAnimationFrame(animate);
-  if(canvas.width > 960)
+  if(!isMobileDevice())
   {
     c.clearRect(0, 0, canvas.width, canvas.height);
     lines = 0;
