@@ -2,27 +2,14 @@ var canvas = document.getElementById('header');
 canvas.width = window.innerWidth;
 canvas.height = 450;
 var lines = 0;
-document.getElementById('header-text').innerHTML = isMobileDevice();
 var c = canvas.getContext('2d');
 window.addEventListener('resize', function () {
   canvas.width = window.innerWidth;
-  document.getElementById('header-text').innerHTML = isMobileDevice();
-  if(canvas.width > 960)
-  {
-    spawnArray(canvas.width/3, true);
-  // console.log(window.innerWidth);
-  }
-  else {
     for(var i = 0; i < circleArray.length; i++)
     {
       circleArray[i].update();
     }
-  }
 });
-
-function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-};
 
 function Circle(x, y, dx, dy, radius, color)
 {
@@ -105,11 +92,15 @@ function spawnArray(amount, createNew)
   }
 }
 
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
 spawnArray(1, true);
 var isDone = false;
 function animate () {
   requestAnimationFrame(animate);
-  if(canvas.width > 960)
+  if(!isMobileDevice())
   {
     c.clearRect(0, 0, canvas.width, canvas.height);
     lines = 0;
