@@ -1,144 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Karla|PT+Mono" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <meta charset="utf-8">
-    <title>Sam Fletcher</title>
+    <title>sam fletcher</title>
+    <link rel="stylesheet" href="css/master2.css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <link rel="icon" type="image/png" href="website-icon.png">
   </head>
+
   <body>
-    <canvas id="header"></canvas>
-    <div style="width:100%;" height="425" margin-top="75px">
 
-      <!-- NOTE DONT PLAY ANIMATIONS AFTER 960px WIDE! -->
-
-      <?xml version="1.0" encoding="utf-8"?>
-      <svg version="1.0" width="500.000000px" height="450.000000px" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-        <g transform="translate(0.000000,500.000000) scale(0.1,-0.1)" fill="none" stroke="#000000">
-          <path style="stroke: none; fill: #E9C46A;" d="M 3882.255 -300.676 C 3900.815 -591.522 2096.925 -456.372 2141.808 -286.815 C 2186.691 -117.258 2121.861 -57.414 2251.522 241.806 C 2291.418 391.416 2670.425 565.953 2071.991 670.68 C 1473.557 775.407 1528.412 890.108 1383.791 1159.405 C 1239.17 1428.702 1274.078 1593.267 1204.261 1668.072 C 1134.444 1742.877 810.291 1797.733 939.952 1902.46 C 1069.613 2007.187 1114.496 2166.771 1109.509 2276.485 C 1104.522 2386.199 1064.626 2700.379 715.539 2835.028 C 366.452 2969.677 251.752 3074.403 236.791 3149.208 C 221.83 3224.013 236.792 3373.624 531.022 3523.233 C 825.252 3672.842 989.821 3867.335 1149.404 3987.023 C 1308.987 4106.711 1908.02 4589.412 2600.444 4381.058 C 3292.868 4172.704 3542.722 4322.845 3901.34 4000.119 C 4173.12 3737.259 4322.814 3733.598 4452.975 3225.345 C 4633.499 2453.375 4608.081 2215.806 4152.047 1570.474 C 3721.991 895.896 3698.833 373.415 3882.255 -300.676 Z"/>
-          <path style="stroke: none; fill: #E9C46A;" d="M 952.581 2390.363 C 952.581 2390.363 1023.517 2082.924 942.445 2062.639 C 864.765 2025.394 831.414 2088.158 797.274 2275.169 C 786.878 2370.597 709.392 2564.467 823.98 2596.443 C 913.755 2614.851 952.581 2390.377 952.581 2390.377" transform="matrix(1, 0, 0, 1, 0, -0.00011)"/>
-        </g>
-      </svg>
-      <svg version="1.0" width="500.000000px" height="450.000000px" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-        <g transform="translate(0.000000,500.000000) scale(0.1,-0.1)" fill="none" stroke="#000000">
-          <path id="face-fill" style="stroke: none; fill: #eeeeee;" d="M 3882.255 -300.676 C 3900.815 -591.522 2096.925 -456.372 2141.808 -286.815 C 2186.691 -117.258 2121.861 -57.414 2251.522 241.806 C 2291.418 391.416 2670.425 565.953 2071.991 670.68 C 1473.557 775.407 1528.412 890.108 1383.791 1159.405 C 1239.17 1428.702 1274.078 1593.267 1204.261 1668.072 C 1134.444 1742.877 810.291 1797.733 939.952 1902.46 C 1069.613 2007.187 1114.496 2166.771 1109.509 2276.485 C 1104.522 2386.199 1064.626 2700.379 715.539 2835.028 C 366.452 2969.677 251.752 3074.403 236.791 3149.208 C 221.83 3224.013 236.792 3373.624 531.022 3523.233 C 825.252 3672.842 989.821 3867.335 1149.404 3987.023 C 1308.987 4106.711 1908.02 4589.412 2600.444 4381.058 C 3292.868 4172.704 3542.722 4322.845 3901.34 4000.119 C 4173.12 3737.259 4322.814 3733.598 4452.975 3225.345 C 4633.499 2453.375 4608.081 2215.806 4152.047 1570.474 C 3721.991 895.896 3698.833 373.415 3882.255 -300.676 Z"/>
-          <path id="face" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 40px; stroke-linejoin: round; stroke-linecap: round;"
-           d="M 2141.808 -286.815 C 2186.691 -117.258 2121.861 -57.414 2251.522 241.806 C 2291.418 391.416 2670.425 565.953 2071.991 670.68 C 1473.557 775.407 1528.412 890.108 1383.791 1159.405 C 1239.17 1428.702 1274.078 1593.267 1204.261 1668.072 C 1134.444 1742.877 810.291 1797.733 939.952 1902.46 C 1069.613 2007.187 1114.496 2166.771 1109.509 2276.485 C 1104.522 2386.199 1064.626 2700.379 715.539 2835.028 C 366.452 2969.677 251.752 3074.403 236.791 3149.208 C 221.83 3224.013 236.792 3373.624 531.022 3523.233 C 825.252 3672.842 989.821 3867.335 1149.404 3987.023 C 1308.987 4106.711 1908.02 4589.412 2600.444 4381.058 C 3292.868 4172.704 3542.722 4322.845 3901.34 4000.119 C 4173.12 3737.259 4322.814 3733.598 4452.975 3225.345 C 4633.499 2453.375 4608.081 2215.806 4152.047 1570.474 C 3721.991 895.896 3698.833 373.415 3882.255 -300.676"/>
-          <path id="glasses-fill" style="stroke: none; fill: #eeeeee;" d="M 952.581 2390.363 C 952.581 2390.363 1023.517 2082.924 942.445 2062.639 C 864.765 2025.394 831.414 2088.158 797.274 2275.169 C 786.878 2370.597 709.392 2564.467 823.98 2596.443 C 913.755 2614.851 952.581 2390.377 952.581 2390.377" transform="matrix(1, 0, 0, 1, 0, -0.00011)"/>
-          <path id="glasses" style="fill: none; stroke: black; stroke-width: 40px; stroke-linejoin: round; stroke-linecap: round;"
-           d="M 952.581 2390.363 C 952.581 2390.363 1023.517 2082.924 942.445 2062.639 C 864.765 2025.394 831.414 2088.158 797.274 2275.169 C 786.878 2370.597 709.392 2564.467 823.98 2596.443 C 913.755 2614.851 952.601 2390.384 952.581 2390.377 C 952.581 2390.377 1229.258 2502.845 1742.8 2567.038 C 2256.342 2631.231 2195.528 2415.001 2381.35 2371.079"/>
-          <path id="ear" style="fill: none; stroke: black; stroke-width: 40px; stroke-linecap: round; stroke-linejoin: round;"
-           d="M 2200.091 2272.055 C 2200.091 2272.055 2186.812 2464.606 2047.379 2433.621 C 1907.946 2402.636 2010.445 2164.183 1997.652 2006.611 C 1938.381 1742.804 2005.316 1719.377 2056.005 1704.1"/>
-        </g>
-      </svg>
-    </div>
-
-    <div id="about-me-container">
-      <div id="terminal-window" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
-        <p id="terminal-title">sam-fletcher/about-me.txt</p>
-        <div class="terminal-buttons" id="red-button" style="margin-left: -25px;" hover="background:red;">
-        </div>
-        <div class="terminal-buttons" id="blue-button" style="margin-left: -50px;">
-        </div>
-        <div class="terminal-buttons" id="yellow-button" style="margin-left: -75px;">
-        </div>
-        <div id="terminal-pane">
-          <p class="terminal-content" style="margin-top:20px;float:none;">"sam-fletcher": {</p>
-            <p class="terminal-content">&nbsp&nbsp&nbsp&nbsp"home-town":</p>
-          <p class="terminal-content" style="color:#cccccc;margin-top:0;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Plano, TX"</p>
-          <p class="terminal-content">&nbsp&nbsp&nbsp&nbsp"university":</p>
-          <p class="terminal-content" style="color:#cccccc;margin-top:0;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"University of Oklahoma"</p>
-          <p class="terminal-content">&nbsp&nbsp&nbsp&nbsp"major":</p>
-          <p class="terminal-content" style="color:#cccccc;margin-top:0;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Computer Science"</p>
-          <p class="terminal-content">&nbsp&nbsp&nbsp&nbsp"expected-graduation":</p>
-          <p class="terminal-content" style="color:#cccccc;margin-top:0;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"May 2022"</p>
-          <p class="terminal-content">&nbsp&nbsp&nbsp&nbsp"resume":</p>
-          <p class="terminal-content" style="color:#cccccc;float:left;margin-top:0;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"</p>
-            <a class="terminal-content" href="./resume.pdf" target="_blank" style="float:left;margin:0;color:#3a92c8;">samfletcher.pdf</a><p class="terminal-content" style="color:#cccccc;margin-top:0;">"</p>
-          <p class="terminal-content">&nbsp&nbsp&nbsp&nbsp"email":</p>
-          <p class="terminal-content" style="color:#cccccc;float:left;margin-top:0;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"</p>
-            <a class="terminal-content" href="mailto:sfletchertx@gmail.com" style="float:left;margin:0;color:#3a92c8;">sfletchertx@gmail.com</a><p class="terminal-content" style="color:#cccccc;margin-top:0;">"</p>
-          <p class="terminal-content">&nbsp&nbsp&nbsp&nbsp"social":</p>
-          <p class="terminal-content" style="color:#cccccc;float:left;margin-top:0;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp["</p>
-            <a class="terminal-content" href="https://www.instagram.com/sfletchertx/" target="_blank" style="float:left;margin:0;color:#3a92c8;">@sfletchertx</a><p class="terminal-content" style="float:left;color:#cccccc;margin:0;">",&nbsp"</p>
-            <a class="terminal-content" href="https://github.com/s-fletcher" target="_blank" style="float:left;margin:0;color:#3a92c8;">github.com/s-fletcher</a><p class="terminal-content" style="color:#cccccc;margin:0;">"]</p>
-          <p class="terminal-content">}</p>
-        </div>
+    <div id="canvas">
+      <div id="title" align="center">
+        <a href="/">SAM FLETCHER</a>
       </div>
-    </div>
-
-    <div id="my-work">
-      <h1 id="my-work-text" data-aos="fade-right" data-aos-once="true">MY WORK</h1>
-      <div id="my-work-container">
-
-        <div class="my-work-item" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
-          <div class="item-thumbnail">
-          </div>
-          <div class="item-info">
-            <p class="item-info"><strong>Calculator</strong> java project that is a functional calculator</p>
-          </div>
-        </div>
-
-        <div class="my-work-item" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
-          <div class="item-thumbnail">
-          </div>
-          <div class="item-info">
-            <p class="item-info"><strong>Security Camera</strong> made from a Raspberry Pi 3 using the python language</p>
-          </div>
-        </div>
-
-        <div class="my-work-item" data-aos="fade-in" data-aos-delay="300" data-aos-once="true">
-          <div class="item-thumbnail">
-          </div>
-          <div class="item-info">
-            <p class="item-info"><strong>Mesonet Statistics</strong> java project that calculates statistics based off weather data</p>
-          </div>
-        </div>
-
-        <div class="my-work-item" data-aos="fade-in" data-aos-delay="400" data-aos-once="true">
-          <div class="item-thumbnail">
-          </div>
-          <div class="item-info">
-            <p class="item-info"><strong>White Shirts</strong> film about an isolated man who is recruited into a cult</p>
-          </div>
-        </div>
-
-        <div class="my-work-item" data-aos="fade-in" data-aos-delay="500" data-aos-once="true">
-          <div class="item-thumbnail">
-          </div>
-          <div class="item-info">
-            <p class="item-info"><strong>Life In Between</strong> film about a life that happens in seconds</p>
-          </div>
-        </div>
-
-        <div class="my-work-item" data-aos="fade-in" data-aos-delay="700" data-aos-once="true">
-          <div class="item-thumbnail">
-          </div>
-          <div class="item-info">
-            <p class="item-info"><strong>Baby Driver</strong> film that recreates an Edgar Wright scene</p>
-          </div>
-        </div>
-
+      <div id="nav">
+        <table align="center">
+          <th class="nav">
+            <a class="hoverable" href="bio">bio</a>
+          </th>
+          <th class="nav">
+            <a class="hoverable" href="contact">contact</a>
+          </th>
+          <th class="nav">
+            <a class="hoverable" href="experimental.html">experimental</a>
+          </th>
+        </table>
       </div>
+
+      <div w3-include-html="/projects/portfolio" style="padding-bottom: 50px;"></div>
+
     </div>
 
-    <div id="footer">
-      <div id="footer-container">
-        <p id="footer-left">© 2018 Sam Fletcher.</p>
-        <p id="footer-right"><a href="mailto:sfletchertx@gmail.com">email</a> // <a href="https://github.com/s-fletcher" target="_blank">github</a> // <a href="https://www.instagram.com/sfletchertx/" target="_blank">instagram</a></p>
-      </div>
-    </div>
-
-    <div id="header-title">
-      <p id="header-text"><a href="#">SAM FLETCHER</a></p>
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        w3IncludeHTML();
     </script>
-    <script src="js/header.js"> </script>
   </body>
 </html>
