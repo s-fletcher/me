@@ -2,11 +2,12 @@ var canvas = document.getElementById('header');
 canvas.width = window.innerWidth;
 canvas.height = 450;
 var lines = 0;
-
+document.getElementById('header-text').innerHTML = canvas.width;
 var c = canvas.getContext('2d');
 
 window.addEventListener('resize', function () {
   canvas.width = window.innerWidth;
+  document.getElementById('header-text').innerHTML = canvas.width;
   if(canvas.width > 960)
   {
     spawnArray(canvas.width/3, true);
