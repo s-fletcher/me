@@ -55,7 +55,7 @@ svg
 
 #about-me-container
 {
-  height: 800px;
+  height: 520px;
   width: 100%;
   background: #ffffff;
   position: relative;
@@ -91,7 +91,7 @@ svg
   max-width: 1000px;
   left: 50%;
   margin-left: -25%;
-  top: 100px;
+  top: 80px;
   background: #e9e9e9;
   width: 50%;
   min-width: 650px;
@@ -201,6 +201,7 @@ and (min-width : 2000px) {
 {
   background: #eeeeee;
   margin-bottom: 100px;
+  padding-top: 200px;
   width: 100%;
 }
 
