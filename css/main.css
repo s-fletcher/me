@@ -371,16 +371,6 @@ p.item-info
 /* ANIMATIONS */
 /* ---------- */
 
-@keyframes reveal-up {
-  0%
-  {
-    height: 0;
-  }
-  100%
-  {
-    height: 10px;
-  }
-}
 
 @keyframes fade-in {
   0%
