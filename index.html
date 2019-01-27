@@ -17,7 +17,7 @@
       gtag('config', 'UA-132791373-1');
     </script>
   </head>
-  <body>
+  <body id="body">
     <canvas id="header"></canvas>
     <div style="width:100%;" height="425" margin-top="75px">
       <!-- NOTE DONT PLAY ANIMATIONS AFTER 960px WIDE! -->
@@ -83,7 +83,7 @@
 
         <!-- NOTE: CALCULATOR -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="50" data-aos-once="true">
-          <a class="item-link" href="#">
+          <a class="item-link" onclick="clickedCalc()">
             <div class="item-thumbnail">
               <img class="image-thumbnail" style="width:100%;margin-top: 15px;" src="images/calculator-thumbnail.png">
             </div>
@@ -100,7 +100,7 @@
 
 <!-- NOTE: SECURITY CAMERA -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
-          <a class="item-link" href="#">
+          <a class="item-link" onclick="clickedSecCam()">
             <div class="item-thumbnail">
               <img class="image-thumbnail" style="width:100%;margin-top: -100px;" src="images/security-camera-thumbnail.jpg">
             </div>
@@ -117,7 +117,7 @@
 
 <!-- NOTE: MESONET STATISTICS -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="150" data-aos-once="true">
-          <a class="item-link" href="#">
+          <a class="item-link" onclick="clickedMesonetStat()">
             <div class="item-thumbnail">
               <img class="image-thumbnail" style="height:100%;margin-left: -180px;" src="images/mesonet-statistics-thumbnail.png">
             </div>
@@ -134,7 +134,7 @@
 
 <!-- NOTE: WHITE SHIRTS -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
-          <a class="item-link" href="#">
+          <a class="item-link" onclick="clickedWhiteShirts()">
             <div class="item-thumbnail">
               <img class="video-thumbnail" src="images/white-shirts-thumbnail.png">
               <div class="color-combo" style="background:#02C39A;"></div>
@@ -156,7 +156,7 @@
 
 <!-- NOTE: LIFE IN BETWEEN -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="250" data-aos-once="true">
-          <a class="item-link" href="#">
+          <a class="item-link" onclick="clickedLifeInBtw()">
             <div class="item-thumbnail">
               <img class="video-thumbnail" src="images/life-in-between-thumbnail.png">
               <div class="color-combo" style="background:#1D4C5C;"></div>
@@ -178,7 +178,7 @@
 
 <!-- NOTE: BABY DRIVER -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="300" data-aos-once="true">
-          <a class="item-link" href="#">
+          <a class="item-link" onclick="clickedBabyDriver()">
             <div class="item-thumbnail">
               <img class="video-thumbnail" src="images/baby-driver-thumbnail.png">
               <div class="color-combo" style="background:#E9C46A;"></div>
@@ -207,6 +207,49 @@
       </div>
     </div>
 
+    <!-- NOTE: ALL MODALS -->
+    <div id="calculator-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Calculator</p>
+      </div>
+    </div>
+
+    <div id="security-camera-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Security Camera</p>
+      </div>
+    </div>
+
+    <div id="mesonet-statistics-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Mesonet Statistics</p>
+      </div>
+    </div>
+
+    <div id="white-shirts-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>White Shirts</p>
+      </div>
+    </div>
+
+    <div id="life-in-between-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Life in Between</p>
+      </div>
+    </div>
+
+    <div id="baby-driver-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Baby Driver</p>
+      </div>
+    </div>
+
     <div id="header-title">
       <p id="header-text"><a href="#">SAM FLETCHER</a></p>
     </div>
@@ -216,5 +259,6 @@
       AOS.init();
     </script>
     <script src="js/header.js"> </script>
+    <script src="js/popup.js"> </script>
   </body>
 </html>
