@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/calc.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Karla|PT+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -83,7 +84,7 @@
 
         <!-- NOTE: CALCULATOR -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="50" data-aos-once="true">
-          <a class="item-link" onclick="clickedCalc()">
+          <a class="item-link" onclick="clicked('calculator-modal')">
             <div class="item-thumbnail">
               <img class="image-thumbnail" style="width:100%;margin-top: 15px;" src="images/calculator-thumbnail.png">
             </div>
@@ -92,15 +93,15 @@
             </div>
           </a>
           <div class="hover-reveal-1" style="background:#E76F51;left:0;transition-delay:0s;"></div>
-          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.05s;"></div>
-          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.1s;"></div>
-          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.15s;"></div>
-          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.2s;"></div>
+          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.03s;"></div>
+          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.06s;"></div>
+          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.09s;"></div>
+          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.12s;"></div>
         </div>
 
 <!-- NOTE: SECURITY CAMERA -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
-          <a class="item-link" onclick="clickedSecCam()">
+          <a class="item-link" onclick="clicked('security-camera-modal')">
             <div class="item-thumbnail">
               <img class="image-thumbnail" style="width:100%;margin-top: -100px;" src="images/security-camera-thumbnail.jpg">
             </div>
@@ -109,15 +110,15 @@
             </div>
           </a>
           <div class="hover-reveal-1" style="background:#E76F51;left:0;transition-delay:0s;"></div>
-          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.05s;"></div>
-          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.1s;"></div>
-          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.15s;"></div>
-          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.2s;"></div>
+          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.03s;"></div>
+          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.06s;"></div>
+          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.09s;"></div>
+          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.12s;"></div>
         </div>
 
 <!-- NOTE: MESONET STATISTICS -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="150" data-aos-once="true">
-          <a class="item-link" onclick="clickedMesonetStat()">
+          <a class="item-link" onclick="clicked('mesonet-statistics-modal')">
             <div class="item-thumbnail">
               <img class="image-thumbnail" style="height:100%;margin-left: -180px;" src="images/mesonet-statistics-thumbnail.png">
             </div>
@@ -126,15 +127,15 @@
             </div>
           </a>
           <div class="hover-reveal-1" style="background:#E76F51;left:0;transition-delay:0s;"></div>
-          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.05s;"></div>
-          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.1s;"></div>
-          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.15s;"></div>
-          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.2s;"></div>
+          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.03s;"></div>
+          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.06s;"></div>
+          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.09s;"></div>
+          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.12s;"></div>
         </div>
 
 <!-- NOTE: WHITE SHIRTS -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
-          <a class="item-link" onclick="clickedWhiteShirts()">
+          <a class="item-link" onclick="clicked('white-shirts-modal')">
             <div class="item-thumbnail">
               <img class="video-thumbnail" src="images/white-shirts-thumbnail.png">
               <div class="color-combo" style="background:#02C39A;"></div>
@@ -148,15 +149,15 @@
             </div>
           </a>
           <div class="hover-reveal-1" style="background:#E76F51;left:0;transition-delay:0s;"></div>
-          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.05s;"></div>
-          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.1s;"></div>
-          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.15s;"></div>
-          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.2s;"></div>
+          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.03s;"></div>
+          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.06s;"></div>
+          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.09s;"></div>
+          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.12s;"></div>
         </div>
 
 <!-- NOTE: LIFE IN BETWEEN -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="250" data-aos-once="true">
-          <a class="item-link" onclick="clickedLifeInBtw()">
+          <a class="item-link" onclick="clicked('life-in-between-modal')">
             <div class="item-thumbnail">
               <img class="video-thumbnail" src="images/life-in-between-thumbnail.png">
               <div class="color-combo" style="background:#1D4C5C;"></div>
@@ -170,15 +171,15 @@
             </div>
           </a>
           <div class="hover-reveal-1" style="background:#E76F51;left:0;transition-delay:0s;"></div>
-          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.05s;"></div>
-          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.1s;"></div>
-          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.15s;"></div>
-          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.2s;"></div>
+          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.03s;"></div>
+          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.06s;"></div>
+          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.09s;"></div>
+          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.12s;"></div>
         </div>
 
 <!-- NOTE: BABY DRIVER -->
         <div class="my-work-item" data-aos="fade-in" data-aos-delay="300" data-aos-once="true">
-          <a class="item-link" onclick="clickedBabyDriver()">
+          <a class="item-link" onclick="clicked('baby-driver-modal')">
             <div class="item-thumbnail">
               <img class="video-thumbnail" src="images/baby-driver-thumbnail.png">
               <div class="color-combo" style="background:#E9C46A;"></div>
@@ -192,10 +193,10 @@
             </div>
           </a>
           <div class="hover-reveal-1" style="background:#E76F51;left:0;transition-delay:0s;"></div>
-          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.05s;"></div>
-          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.1s;"></div>
-          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.15s;"></div>
-          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.2s;"></div>
+          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.03s;"></div>
+          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.06s;"></div>
+          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.09s;"></div>
+          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.12s;"></div>
         </div>
       </div>
     </div>
@@ -211,7 +212,82 @@
     <div id="calculator-modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Calculator</p>
+        <div>
+          <div id="calc-body">
+            <div id="calc-answer-box">
+              <p id="calc-answer">0</p>
+            </div>
+            <div id="calc-all-buttons">
+              <div onclick="reset()" class="calc-color2" style="float:left;">
+                <p>C</p>
+              </div>
+              <div onclick="negative()" class="calc-color2" style="float:left;">
+                <p>+/-</p>
+              </div>
+              <div onclick="percent()" class="calc-color2" style="float:left;">
+                <p>%</p>
+              </div>
+              <div class="calc-color3" style="float:left;">
+                <p>÷</p>
+              </div>
+              <div onclick="number(7)" class="calc-color1" style="float:left;">
+                <p>7</p>
+              </div>
+              <div onclick="number(8)" class="calc-color1" style="float:left;">
+                <p>8</p>
+              </div>
+              <div onclick="number(9)" class="calc-color1" style="float:left;">
+                <p>9</p>
+              </div>
+              <div class="calc-color3" style="float:left;">
+                <p>X</p>
+              </div>
+              <div onclick="number(4)" class="calc-color1" style="float:left;">
+                <p>4</p>
+              </div>
+              <div onclick="number(5)" class="calc-color1" style="float:left;">
+                <p>5</p>
+              </div>
+              <div onclick="number(6)" class="calc-color1" style="float:left;">
+                <p>6</p>
+              </div>
+              <div class="calc-color3" style="float:left;">
+                <p>-</p>
+              </div>
+              <div onclick="number(1)" class="calc-color1" style="float:left;">
+                <p>1</p>
+              </div>
+              <div onclick="number(2)" class="calc-color1" style="float:left;">
+                <p>2</p>
+              </div>
+              <div onclick="number(3)" class="calc-color1" style="float:left;">
+                <p>3</p>
+              </div>
+              <div onclick="addAction()" id="calc-add" class="calc-color3" style="float:left;">
+                <p>+</p>
+              </div>
+              <div onclick="number(0)" class="calc-color1" style="float:left;width:166px;">
+                <p>0</p>
+              </div>
+              <div onclick="decimal()" class="calc-color1" style="float:left;">
+                <p>.</p>
+              </div>
+              <div onclick="equals()" class="calc-color3" style="float:left;">
+                <p>=</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="modal-text">Calculator - <a class="unclickable" style="color:red;">unfinished version</p>
+        <div class="modal-bottom" style="border-bottom-left-radius:5px;background:#E76F51;left:0;"></div>
+        <div class="modal-bottom" style="background:#F4A261;left:20%;"></div>
+        <div class="modal-bottom" style="background:#EDCE85;left:40%;"></div>
+        <div class="modal-bottom" style="background:#2A9D8F;left:60%;"></div>
+        <div class="modal-bottom" style="border-bottom-right-radius:5px;background:#264653;left:80%;"></div>
+        <!-- <div class="modal-info">
+          <p class="modal-title">Calculator</p>
+          <p class="modal-text">A functional calculator that is built with <a class="unclickable" style="color:red;">HTML</a>, <a class="unclickable" style="color:red;">CSS</a>, and <a class="unclickable" style="color:red;">JavaScript</a>. The project is not done; the operators do not work. However, you can play with what is done on the left.</p>
+        </div> -->
       </div>
     </div>
 
@@ -260,5 +336,8 @@
     </script>
     <script src="js/header.js"> </script>
     <script src="js/popup.js"> </script>
+    <script src="js/calculator.js"> </script>
   </body>
 </html>
+
+<!-- TODO: MAKE EXIT BUTTON WORK ON MDOALS -->

@@ -1,56 +1,43 @@
-var calc = document.getElementById('calculator-modal');
-var secCam = document.getElementById('security-camera-modal');
-var mesonetStat = document.getElementById('mesonet-statistics-modal');
-var whiteShirts = document.getElementById('white-shirts-modal');
-var lifeInBtw = document.getElementById('life-in-between-modal');
-var babyDriver = document.getElementById('baby-driver-modal');
 var body = document.getElementById('body');
+var headText = document.getElementById('header-text');
+console.log(body.style.overflowY);
 
-var all = [calc, secCam, mesonetStat, whiteShirts, lifeInBtw, babyDriver];
+var toClose;
 
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close");
 
-function clickedCalc() {
-  calc.style.display = "block";
+function clicked(x)
+{
+  document.getElementById(x).style.display = "block";
+  toClose = x;
   body.style.cursor = "pointer";
+  body.style.overflowY = "hidden";
+  body.style.paddingRight = "17px";
+  headText.style.marginLeft = "-17px";
+  console.log(body.style.overflowY);
 }
 
-function clickedSecCam() {
-  secCam.style.display = "block";
-  body.style.cursor = "pointer";
+function modalClose()
+{
+  document.getElementById(toClose).style.display = "none";
+  body.style.cursor = "auto";
+  body.style.overflowY = "auto";
+  body.style.paddingRight = "0px";
+  headText.style.marginLeft = "0px";
 }
 
-function clickedMesonetStat() {
-  mesonetStat.style.display = "block";
-  body.style.cursor = "pointer";
-}
+Array.from(span).forEach(v => v.addEventListener('click', function() {
+  modalClose();
+}));
 
-function clickedWhiteShirts() {
-  whiteShirts.style.display = "block";
-  body.style.cursor = "pointer";
-}
-
-function clickedLifeInBtw() {
-  lifeInBtw.style.display = "block";
-  body.style.cursor = "pointer";
-}
-
-function clickedBabyDriver() {
-  babyDriver.style.display = "block";
-  body.style.cursor = "pointer";
-}
-
-span.onclick = function() {
-  for(var i = 0; i < all.length; i++)
-    all[i].style.display = "none";
-  body.style.cursor = "default";
+document.getElementById("header-text").onclick = function()
+{
+  modalClose();
 }
 
 window.onclick = function(event) {
-  if (all.includes(event.target))
+  if (document.getElementById(toClose) == (event.target))
   {
-    for(var i = 0; i < all.length; i++)
-      all[i].style.display = "none";
-    body.style.cursor = "default";
+    modalClose();
   }
 }
