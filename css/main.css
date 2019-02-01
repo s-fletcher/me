@@ -348,13 +348,6 @@ p.item-info
   color: #555555;
 }
 
-.color-combo
-{
-  width: 20%;
-  height: 100%;
-  float: left;
-}
-
 .modal
 {
   display: none;
