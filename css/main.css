@@ -373,7 +373,7 @@ p.item-info
   width: 20%;
   height: 7px;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .modal-text
