@@ -1,14 +1,13 @@
 #calc-body
 {
   background: #eeeeee;
+  margin-top: -50px;
   border-radius: 15px;
   width: 400px;
   height: 560px;
-  margin-top: -50px;
   margin-left: calc(50% - 200px);
   box-shadow: -20px 50px 100px #dddddd;
 }
-
 #calc-answer-box
 {
   position: relative;
@@ -70,6 +69,6 @@
 }
 .calc-selected
 {
-  background = #ffffff;
-  box-shadow:inset 0px 0px 0px 1px black;
+  background: #ffdaa3;
+  box-shadow:inset 0px 0px 0px 1px #ffad33;
 }
