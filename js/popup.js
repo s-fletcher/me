@@ -1,6 +1,5 @@
 var body = document.getElementById('body');
 var headText = document.getElementById('header-text');
-console.log(body.style.overflowY);
 
 var toClose;
 
@@ -14,12 +13,21 @@ function clicked(x)
   body.style.overflowY = "hidden";
   body.style.paddingRight = "17px";
   headText.style.marginLeft = "-17px";
-  console.log(body.style.overflowY);
 }
 
 function modalClose()
 {
   document.getElementById(toClose).style.display = "none";
+  // Created to force reload the iframe so sound doesnt keep playing
+  if(toClose == "white-shirts-modal")
+  {
+    document.getElementById("white-shirts-video").src = "";
+    document.getElementById("white-shirts-video").src = "https://streamable.com/s/0eeds/qaeikq";
+  }
+  else if(toClose == "security-camera-modal")
+  {
+    document.getElementById("sec-cam-video").pause();
+  }
   body.style.cursor = "auto";
   body.style.overflowY = "auto";
   body.style.paddingRight = "0px";

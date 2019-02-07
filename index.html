@@ -167,54 +167,10 @@
           <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.09s;"></div>
           <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.12s;"></div>
         </div>
-
-<!-- NOTE: LIFE IN BETWEEN -->
-        <!-- <div class="my-work-item" data-aos="fade-in" data-aos-delay="250" data-aos-once="true">
-          <a class="item-link" onclick="clicked('life-in-between-modal')">
-            <div class="item-thumbnail">
-              <img class="video-thumbnail" src="images/life-in-between-thumbnail.png">
-              <div class="color-combo" style="background:#1D4C5C;"></div>
-              <div class="color-combo" style="background:#1D4C5C"></div>
-              <div class="color-combo" style="background:#1D4C5C"></div>
-              <div class="color-combo" style="background:#1D4C5C"></div>
-              <div class="color-combo" style="background:#1D4C5C"></div>
-            </div>
-            <div class="item-info">
-              <p class="item-info"><strong>Life In Between</strong> film about a life that happens in seconds</p>
-            </div>
-          </a>
-          <div class="hover-reveal-1" style="background:#E76F51;left:0;transition-delay:0s;"></div>
-          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.03s;"></div>
-          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.06s;"></div>
-          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.09s;"></div>
-          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.12s;"></div>
-        </div> -->
-
-<!-- NOTE: BABY DRIVER -->
-        <!-- <div class="my-work-item" data-aos="fade-in" data-aos-delay="300" data-aos-once="true">
-          <a class="item-link" onclick="clicked('baby-driver-modal')">
-            <div class="item-thumbnail">
-              <img class="video-thumbnail" src="images/baby-driver-thumbnail.png">
-              <div class="color-combo" style="background:#E9C46A;"></div>
-              <div class="color-combo" style="background:#E9C46A"></div>
-              <div class="color-combo" style="background:#E9C46A"></div>
-              <div class="color-combo" style="background:#E9C46A"></div>
-              <div class="color-combo" style="background:#E9C46A"></div>
-            </div>
-            <div class="item-info">
-              <p class="item-info"><strong>Baby Driver</strong> film that recreates an Edgar Wright scene</p>
-            </div>
-          </a>
-          <div class="hover-reveal-1" style="background:#E76F51;left:0;transition-delay:0s;"></div>
-          <div class="hover-reveal-2" style="background:#F4A261;left:20%;transition-delay:.03s;"></div>
-          <div class="hover-reveal-3" style="background:#EDCE85;left:40%;transition-delay:.06s;"></div>
-          <div class="hover-reveal-4" style="background:#2A9D8F;left:60%;transition-delay:.09s;"></div>
-          <div class="hover-reveal-5" style="background:#264653;left:80%;transition-delay:.12s;"></div>
-        </div> -->
       </div>
     </div>
 
-    <!-- NOTE: ALL MODALS -->
+    <!-- NOTE: CALCULATOR MODAL-->
     <div id="calculator-modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -293,7 +249,7 @@
         <div class="modal-bottom" style="border-bottom-right-radius:5px;background:#264653;left:80%;"></div>
       </div>
     </div>
-
+<!-- NOTE: SECURITY CAMERA MODAL -->
     <div id="security-camera-modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -304,10 +260,13 @@
         <div class="modal-bottom" style="background:#EDCE85;left:40%;"></div>
         <div class="modal-bottom" style="background:#2A9D8F;left:60%;"></div>
         <div class="modal-bottom" style="border-bottom-right-radius:5px;background:#264653;left:80%;"></div>
-        <div style="position:relative;height:50px;width:100%;"><p class="modal-text" style="top:-30px;font-size:15px;color:#555555">demo coming soon</p></div>
+        <video id="sec-cam-video" width="100%" height="100%" class="video" controls onclick="this.paused ? this.play() : this.pause();">
+          <source src="images/security-cam.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
-
+<!-- NOTE: MESONET STATISTICS MODAL -->
     <div id="mesonet-statistics-modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -321,7 +280,7 @@
         <div style="position:relative;height:50px;width:100%;"><p class="modal-text" style="top:-30px;font-size:15px;color:#555555">demo coming soon</p></div>
       </div>
     </div>
-
+<!-- NOTE: WHITE SHIRTS MODAL -->
     <div id="white-shirts-modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -331,18 +290,21 @@
         <div class="modal-bottom" style="background:#EDCE85;left:40%;"></div>
         <div class="modal-bottom" style="background:#2A9D8F;left:60%;"></div>
         <div class="modal-bottom" style="border-bottom-right-radius:5px;background:#264653;left:80%;"></div>
-        <script src="https://fast.wistia.com/embed/medias/zj7u33jgpp.jsonp" async></script>
+        <!-- <script src="https://fast.wistia.com/embed/medias/zj7u33jgpp.jsonp" async></script>
         <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
         <script src="https://fast.wistia.com/embed/medias/zj7u33jgpp.jsonp" async></script>
         <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
         <div class="wistia_responsive_padding" style="padding:42.71% 0 0 0;position:relative;">
-          <div class="wistia_responsive_wrapper" style="height:90%;left:5%;border:5px solid #aaaaaa;position:absolute;top:5%;width:90%;">
+          <div class="wistia_responsive_wrapper" style="height:90%;left:5%;border:1px solid #aaaaaa;position:absolute;top:5%;width:90%;">
             <span class="wistia_embed wistia_async_zj7u33jgpp popover=true popoverAnimateThumbnail=false videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span>
           </div>
+        </div> -->
+        <div style="margin-top:-20px;margin-left:5%;width:90%;height:0px;position:relative;padding-bottom:40.418%;">
+          <iframe id="white-shirts-video" src="https://streamable.com/s/0eeds/qaeikq" frameborder="0" width="100%" height="100%" allowfullscreen style="user-select:none;cursor:pointer;width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
         </div>
       </div>
     </div>
-
+<!-- NOTE: HACKLAHOMA19 MODAL -->
     <div id="hacklahoma19-modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -355,30 +317,6 @@
         <div style="position:relative;height:50px;width:100%;"><p class="modal-text" style="top:-30px;font-size:15px;color:#555555">coming soon</p></div>
       </div>
     </div>
-
-    <!-- <div id="life-in-between-modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p class="modal-text">Life in Between  <a class="unclickable" style="font-size:15px;color:red;">Jan 2018</a></p>
-        <div class="modal-bottom" style="border-bottom-left-radius:5px;background:#E76F51;left:0;"></div>
-        <div class="modal-bottom" style="background:#F4A261;left:20%;"></div>
-        <div class="modal-bottom" style="background:#EDCE85;left:40%;"></div>
-        <div class="modal-bottom" style="background:#2A9D8F;left:60%;"></div>
-        <div class="modal-bottom" style="border-bottom-right-radius:5px;background:#264653;left:80%;"></div>
-      </div>
-    </div>
-
-    <div id="baby-driver-modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p class="modal-text">Baby Driver <a class="unclickable" style="font-size:15px;color:red;">Oct 2017</a></p>
-        <div class="modal-bottom" style="border-bottom-left-radius:5px;background:#E76F51;left:0;"></div>
-        <div class="modal-bottom" style="background:#F4A261;left:20%;"></div>
-        <div class="modal-bottom" style="background:#EDCE85;left:40%;"></div>
-        <div class="modal-bottom" style="background:#2A9D8F;left:60%;"></div>
-        <div class="modal-bottom" style="border-bottom-right-radius:5px;background:#264653;left:80%;"></div>
-      </div>
-    </div> -->
 
     <div id="header-title">
       <p id="header-text"><a href="#">SAM FLETCHER</a></p>
