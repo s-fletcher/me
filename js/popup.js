@@ -22,11 +22,12 @@ function modalClose()
   if(toClose == "white-shirts-modal")
   {
     document.getElementById("white-shirts-video").src = "";
-    document.getElementById("white-shirts-video").src = "https://streamable.com/s/0eeds/qaeikq";
+    document.getElementById("white-shirts-video").src = "https://player.vimeo.com/video/277564748?color=ffffff&byline=0&portrait=0";
   }
   else if(toClose == "security-camera-modal")
   {
-    document.getElementById("sec-cam-video").pause();
+    document.getElementById("security-camera-video").src = "";
+    document.getElementById("security-camera-video").src = "https://player.vimeo.com/video/316245297?color=ffffff&byline=0&portrait=0";
   }
   body.style.cursor = "auto";
   body.style.overflowY = "auto";

@@ -373,7 +373,7 @@ p.item-info
 .modal-text
 {
   position: absolute;
-  bottom: 3px;
+  top: 0px;
   left: 20px;
   font-size: 20px;
   color: #444444;
@@ -422,15 +422,11 @@ p.item-info
   margin-top: -15px;
   width: 90%;
   max-width: 950px;
+
   object-position: center;
   margin-left: 5%;
   border-radius: 5px;
   box-shadow: -10px 20px 100px #dddddd;
-}
-
-.video::full-screen
-{
-  border: 5px solid #eeeeee !important;
 }
 
 /* ---------- */
