@@ -29,6 +29,11 @@ function modalClose()
     document.getElementById("security-camera-video").src = "";
     document.getElementById("security-camera-video").src = "https://player.vimeo.com/video/316245297?color=ffffff&byline=0&portrait=0";
   }
+  else if(toClose == "mesonet-statistics-modal")
+  {
+    document.getElementById("mesonet-statistics-video").src = "";
+    document.getElementById("mesonet-statistics-video").src = "https://player.vimeo.com/video/316505386?color=ffffff&byline=0&portrait=0";
+  }
   body.style.cursor = "auto";
   body.style.overflowY = "auto";
   body.style.paddingRight = "0px";
