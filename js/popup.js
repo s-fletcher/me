@@ -1,5 +1,6 @@
 var body = document.getElementById('body');
 var headText = document.getElementById('header-text');
+document.getElementById('hacklahoma19-modal').style.display = "none"; // for optimization so game doesnt play when not loaded
 
 var toClose;
 

@@ -429,6 +429,13 @@ p.item-info
   box-shadow: -10px 20px 100px #dddddd;
 }
 
+#hacklahoma19
+{
+  border: 1px solid #aaa;
+  margin-left: calc(50% - 500px);
+  margin-top: 5px;
+}
+
 /* ---------- */
 /* ANIMATIONS */
 /* ---------- */
