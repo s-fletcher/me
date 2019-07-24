@@ -275,6 +275,10 @@ and (min-width : 1875px) {
   vertical-align: middle;
 }
 
+.item-info small {
+  font-size: 14px;
+}
+
 .item-link:hover + .hover-reveal-1,
 .item-link:hover ~ .hover-reveal-2,
 .item-link:hover ~ .hover-reveal-3,
