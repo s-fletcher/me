@@ -1,8 +1,26 @@
+@font-face {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Graphik/Graphik-400-Regular.otf');
+}
+@font-face {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Graphik/Graphik-500-Medium.otf');
+}
+// @font-face {
+//   font-family: 'Menlo';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('./fonts/Menlo/Menlo.ttc');
+// }
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Graphik", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

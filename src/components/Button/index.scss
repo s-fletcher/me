@@ -1,0 +1,12 @@
+.Button {
+    display: inline-block;
+    background: #7DC38F;
+    border: 2px solid #73B985;
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: white;
+    transition: .5s;
+}
+.Button:hover {
+        background: #73B985;
+    }

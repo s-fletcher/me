@@ -1,0 +1,26 @@
+.Title {
+    font-family: "Graphik";
+    font-weight: 500;
+    display: inline-block;
+    background: grey;
+    width: 100vw;
+    max-width: 1080px;
+    .left {
+        float: left;
+        background: red;
+        margin-left: 50px;
+        padding: 8px 0;
+    }
+    .right {
+        float: right;
+        background: blue;
+        margin-right: 50px;
+    }
+    a {
+        display: inline-block;  
+        font-size: .8em;
+        color: black;
+        text-decoration: none;
+        margin: auto 30px;
+    }
+}
