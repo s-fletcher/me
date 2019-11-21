@@ -1,9 +1,101 @@
 .Logo {
     display: inline-block;
-    width: 400px;
-    height: 400px;
-    background: #eee;
+    width: 100%;
+    height: 425px;
     position: absolute;
     bottom: 0;
-    margin-left: -200px;
+    margin-left: -50%;
+    svg
+    {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -250px;
+    }
+
+    #face
+    {
+    stroke-dasharray: 13550;
+    stroke-dashoffset: 0;
+    animation: outline-face 4s;
+    }
+
+    #face-fill
+    {
+    opacity: 0;
+    animation: fade-in 2s 3s;
+    animation-fill-mode: forwards;
+    }
+
+    #glasses
+    {
+    stroke-dasharray: 2780;
+    stroke-dashoffset: 0;
+    animation: outline-glasses 4s;
+    }
+
+    #glasses-fill
+    {
+    opacity: 0;
+    animation: fade-in 2s 3s;
+    animation-fill-mode: forwards;
+    }
+
+    #ear
+    {
+    stroke-dasharray: 1100;
+    stroke-dashoffset: 0;
+    animation: outline-ear 4s;
+    }
+}
+
+/* ---------- */
+/* ANIMATIONS */
+/* ---------- */
+@keyframes fade-in {
+  0%
+  {
+    opacity: 0;
+  }
+  5%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+@keyframes outline-face {
+0% {
+  stroke-dashoffset: 13550;
+  }
+100% {
+  stroke-dashoffset: 0;
+  }
+}
+
+@keyframes outline-glasses {
+0% {
+  stroke-dashoffset: 2780;
+  }
+10% {
+  stroke-dashoffset: 2780;
+  }
+70% {
+  stroke-dashoffset: 0;
+  }
+}
+
+@keyframes outline-ear {
+0% {
+  stroke-dashoffset: 1100;
+  }
+30% {
+  stroke-dashoffset: 1100;
+  }
+80% {
+  stroke-dashoffset: 0;
+  }
 }

@@ -7,7 +7,7 @@ class Header extends React.Component {
         return (
             <div className="Header">
                 <div className="container">
-                    <Logo />
+                    <Logo color="#A2C4E7" />
                 </div>
             </div>
         );
