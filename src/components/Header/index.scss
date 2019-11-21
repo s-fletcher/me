@@ -1,0 +1,12 @@
+.Header {
+    width: 100vw;
+    height: 450px;
+    .container {
+        width: 100vw;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        background: #A2C4E7;
+    }
+}
