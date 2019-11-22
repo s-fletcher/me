@@ -2,17 +2,19 @@ import React from 'react';
 import './index.scss';
 import Logo from './Logo';
 import Particles from 'react-particles-js';
+import FPSStats from "react-fps-stats";
 
 class Header extends React.Component {
     
     render () {
         return (
             <div className="Header">
+                <FPSStats />
                 <Logo color="#A2C4E7" />
                 <Particles params={{
                     "particles": {
                         "number": {
-                            "value": 80,
+                            "value": 90,
                             "density": {
                                 "enable": true,
                                 "value_area": 800
