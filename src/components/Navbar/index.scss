@@ -24,4 +24,15 @@
     .resume {
         margin: auto 20px;
     }
+    @media only screen and (max-width : 768px) {
+    .right {
+        opacity: 0;
+    }
+    .left {
+        margin-left: 30px;
+        .sam {
+            margin: 0;
+        }
+    }
+}
 }
