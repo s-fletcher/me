@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
-import Console from '../components/Console';
+// import Console from '../components/Console';
 
 function App() {
   return (
