@@ -2,14 +2,14 @@ import React from 'react';
 import './index.scss';
 import Logo from './Logo';
 import Particles from 'react-particles-js';
-import FPSStats from "react-fps-stats";
+// import FPSStats from "react-fps-stats";
 
 class Header extends React.Component {
     
     render () {
         return (
             <div className="Header">
-                <FPSStats />
+                {/* <FPSStats /> */}
                 <Logo color="#A2C4E7" />
                 <Particles className="particles" params={{
                     "particles": {
