@@ -18,12 +18,23 @@
 // }
 
 body {
+  border: 5px solid red;
+  position: relative;
   overflow-x: hidden;
   width: 100vw;
+  padding: 0;
   margin: 0;
   font-family: "Graphik", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #3A92C8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 code {
