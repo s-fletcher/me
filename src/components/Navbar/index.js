@@ -7,14 +7,22 @@ class Navbar extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
+        function remove(){
+            document.getElementsByClassName("right")[0].classList.remove("openMenu");
+            document.getElementsByClassName("Hamburger")[0].classList.remove("open");
+            document.getElementsByClassName("line")[0].classList.remove("open");
+            document.getElementsByClassName("line")[1].classList.remove("open");
+            document.getElementsByClassName("line")[2].classList.remove("open");
+        }
         window.addEventListener('click', function (e) {
             if (!document.getElementsByClassName('right')[0].contains(e.target)
                 && !document.getElementsByClassName('Hamburger')[0].contains(e.target)) {
-                document.getElementsByClassName("right")[0].classList.remove("openMenu");
-                document.getElementsByClassName("Hamburger")[0].classList.remove("open");
-                document.getElementsByClassName("line")[0].classList.remove("open");
-                document.getElementsByClassName("line")[1].classList.remove("open");
-                document.getElementsByClassName("line")[2].classList.remove("open");
+                    remove();
+            }
+        });
+        window.addEventListener('resize', function(e) {
+            if (window.innerWidth >= 768 && document.getElementsByClassName('right')[0].classList.contains("openMenu")) {
+                remove();
             }
         });
     }
