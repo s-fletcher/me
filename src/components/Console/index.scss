@@ -76,8 +76,13 @@
         .container {
             max-width: 520px;
             .content {
-                font-size: .9em;
+                font-size: .75em;
                 margin-left: 30px;
+            }
+            .title {
+                p {
+                    font-size: .7em;
+                }
             }
         }
     }
