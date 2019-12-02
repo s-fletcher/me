@@ -1,10 +1,14 @@
 .Header {
     width: 100vw;
     height: 500px;
-    position: absolute;
+    margin-top: -48px;
     top: 0;
     z-index: -1;
-    background: #A2C4E7;    
+    position: relative;
+    background: #A2C4E7;
+    .particles {
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width : 768px) {

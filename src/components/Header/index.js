@@ -11,7 +11,7 @@ class Header extends React.Component {
             <div className="Header">
                 <FPSStats />
                 <Logo color="#A2C4E7" />
-                <Particles params={{
+                <Particles className="particles" params={{
                     "particles": {
                         "number": {
                             "value": 90,
@@ -72,7 +72,7 @@ class Header extends React.Component {
                             "random": false,
                             "straight": false,
                             "out_mode": "out",
-                            "bounce": true,
+                            "bounce": false,
                             "attract": {
                                 "enable": false,
                                 "rotateX": 600,
