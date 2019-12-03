@@ -20,12 +20,18 @@
 body {
   position: relative;
   overflow-x: hidden;
+  background: linear-gradient(white 950px, #EBEEF3 951px);
   width: 100vw;
   padding: 0;
   margin: 0;
   font-family: "Graphik", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width : 768px) {
+    body {
+      background: linear-gradient(white 690px, #EBEEF3 691px);
+    }
 }
 
 a {

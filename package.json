@@ -9,7 +9,8 @@
     "react-fps-stats": "^0.1.2",
     "react-icons": "^3.8.0",
     "react-particles-js": "^2.7.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "react-scroll-to-component": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

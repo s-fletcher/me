@@ -44,7 +44,7 @@ class Navbar extends React.Component {
                         <a href="#t" className="sam">Sam Fletcher</a>
                     </div>
                     <div className="right">
-                        <a href="#t" className="about">About</a>
+                        <a href="#about" className="about">About</a>
                         <a href="#t" className="projects">Projects</a>
                         <a href="#t" className="contact">Contact</a>
                         <a href="#t" className="resume"><Button text="Resume" /></a>
