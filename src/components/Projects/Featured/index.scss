@@ -1,0 +1,105 @@
+.Featured {
+    position: relative;
+    display: inline-block;
+    max-width: 800px;
+    margin: 50px 15px;
+    height: 300px;
+    .thumbnail {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 400px;
+        height: 300px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: -5px 3px 25px rgba(0,0,0, .25);
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        position: relative;
+        margin: 30px 0;
+        width: 60%;
+        float: right;
+        color: #2F2F2F;
+        text-align: right;
+        .featured {
+            font-family: Menlo;
+            font-size: .8em;
+            margin: 8px 0;
+            color: #4F855D;
+        }
+        .title {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1.2em;
+        }
+        .description {
+            background: rgba(255,255,255, .95);
+            box-shadow: -3px 3px 12px rgba(0,0,0, .15);
+            border-radius: 8px;
+            p {
+                padding: 18px 20px;
+                font-size: .9em;
+            }
+        }
+        .tech-stack {
+            .item {
+                display: inline-block;
+                margin: 0 5px;
+                font-family: Menlo;
+                font-size: .8em;
+                color: #4A6887;
+            }
+        }
+        .links {
+            .item {
+                color: #4A6887;
+                width: 25px;
+                height: 25px;
+                margin: 25px 5px 0 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.Featured.left {
+    .thumbnail {
+        left: 0;
+    }
+    .content {
+        float: right;
+        text-align: right;
+    }
+}
+
+.Featured.right {
+    .thumbnail {
+        right: 0;
+    }
+    .content {
+        float: left;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .Featured {
+        height: auto;
+        .thumbnail {
+            position: relative;
+            display: inline-block;
+            width: 60vw;
+            height: calc(60vw * (3 / 4));
+        }
+        .content {
+            float: none !important;
+            text-align: left !important;
+            margin: 0;
+            margin-top: 30px;
+            width: 75vw;
+        }
+    }
+}
