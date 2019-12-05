@@ -1,43 +1,43 @@
 {
     "Hacklahoma Registration": {
         "featured": true,
-        "thumbnail": "",
+        "thumbnail": "./images/hacklahoma-registration-thumbnail.png",
         "type": "website",
         "description": "A heavily edited version of Quill, a registration system for attendees to register for a hackathon. This system was built for Hacklahoma and could be called Quill 2.0",
-        "tech-stack": ["Node.js", "Heroku", "Mongo"],
+        "techStack": ["Node.js", "Heroku", "Mongo"],
         "links": {
-            "github": "",
-            "external": ""
+            "github": "https://github.com/Hacklahoma/login",
+            "external": "https://login.hacklahoma.org"
         }
     },
     "Hacklahoma 2020": {
         "featured": true,
-        "thumbnail": "",
+        "thumbnail": "./images/hacklahoma2020-website-thumbnail.png",
         "type": "website",
         "description": "An informative website created for students who are attending Oklahoma’s biggest hackathon, Hacklahoma",
-        "tech-stack": [
+        "techStack": [
             "GitHub",
             "JS",
             "HTML"
         ],
         "links": {
-            "github": "",
-            "external": ""
+            "github": "https://github.com/Hacklahoma/2020",
+            "external": "https://2020.hacklahoma.org"
         }
     },
     "Centrialized Emergency Relief System": {
         "featured": true,
-        "thumbnail": "",
+        "thumbnail": "./images/cers-thumbnail.png",
         "type": "website",
         "description": "Provides a way for volunteers and organizers to easily coordinate meetups for on-site cleanup, resource distribution, and donations without a middle-man",
-        "tech-stack": [
+        "techStack": [
             "React",
             "AWS",
             "Mongo"
         ],
         "links": {
-            "github": "",
-            "external": ""
+            "github": "https://github.com/Shleby/disaster-relief",
+            "external": "https://devpost.com/software/cers-centralized-emergency-relief-system"
         }
     },
     "Hacklahoma Hub": {
@@ -45,7 +45,7 @@
         "thumbnail": "",
         "type": "website",
         "description": "An centrialized website for Hacklahoma displaying past events",
-        "tech-stack": [
+        "techStack": [
             "HTML",
             "JS",
             "Github-Pages"
@@ -60,7 +60,7 @@
         "thumbnail": "",
         "type": "film",
         "description": "A short film about an isolated man who is recruited into a cult",
-        "tech-stack": [
+        "techStack": [
             "Adobe-Premiere",
             "After-Effects"
         ],

@@ -22,9 +22,9 @@ class Featured extends React.Component {
     render () {
         return (
             <div className={"Featured " + this.props.align}>
-                <div className="thumbnail">
+                <a href={this.props.external}><div className="thumbnail">
                     <img src={this.props.thumbnail} alt="thumbnail" />
-                </div>
+                </div></a>
                 <div className="content">
                     <p className="featured">Featured Project</p>
                     <p className="title">{this.props.title}</p>
