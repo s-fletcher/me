@@ -12,7 +12,7 @@ class Contact extends React.Component {
                 <div className="description">
                     <p>I am not currently looking for opportunities however, my inbox is always open. Don’t hesitate to reach out and I’ll try my best to respond.</p>
                 </div>
-                <Button text="Say Hello" />
+                <a href="mailto:sfletchertx@gmail.com"><Button text="Say Hello" /></a>
             </div>
         );
     }
