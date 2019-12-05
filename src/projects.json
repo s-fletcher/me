@@ -51,8 +51,67 @@
             "Github-Pages"
         ],
         "links": {
-            "github": "",
-            "external": ""
+            "github": "https://github.com/Hacklahoma/Hacklahoma.github.io",
+            "external": "https://hacklahoma.org"
+        }
+    },
+    "Deaver Brothers": {
+        "featured": false,
+        "thumbnail": "",
+        "type": "website",
+        "description": "A informative website created for a local stand up comedian duo",
+        "techStack": [
+            "HTML",
+            "JS",
+            "Github-Pages"
+        ],
+        "links": {
+            "github": "https://github.com/Hacklahoma/Hacklahoma.github.io",
+            "external": "https://hacklahoma.org"
+        }
+    },
+    "Cube Platformer": {
+        "featured": false,
+        "thumbnail": "",
+        "type": "website",
+        "description": "A simple cube platform to learn the basics of JS and physics",
+        "techStack": [
+            "HTML",
+            "JS",
+            "Github-Pages"
+        ],
+        "links": {
+            "github": "https://github.com/Hacklahoma/Hacklahoma.github.io",
+            "external": "https://hacklahoma.org"
+        }
+    },
+    "Calculator": {
+        "featured": false,
+        "thumbnail": "",
+        "type": "website",
+        "description": "A functional calculator that supports basic mathemtical calculations",
+        "techStack": [
+            "HTML",
+            "JS",
+            "Github-Pages"
+        ],
+        "links": {
+            "github": "https://github.com/Hacklahoma/Hacklahoma.github.io",
+            "external": "https://hacklahoma.org"
+        }
+    },
+    "Security Camera": {
+        "featured": false,
+        "thumbnail": "",
+        "type": "hardware",
+        "description": "A device that takes a picture and emails the owner when a moving object is detected",
+        "techStack": [
+            "Raspberry-Pi",
+            "Python"
+        ],
+        "links": {
+            "github": "https://github.com/Hacklahoma/Hacklahoma.github.io",
+            "external": "https://hacklahoma.org"
         }
     },
     "White Shirts": {
@@ -61,12 +120,12 @@
         "type": "film",
         "description": "A short film about an isolated man who is recruited into a cult",
         "techStack": [
-            "Adobe-Premiere",
+            "Premiere",
             "After-Effects"
         ],
         "links": {
             "github": "",
-            "external": ""
+            "external": "https://vimeo.com/277564748"
         }
     }
 }

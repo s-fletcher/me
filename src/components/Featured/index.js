@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 import { FaGithub } from 'react-icons/fa'
-import { FaExternalLinkAlt } from 'react-icons/fa'
+import { IoMdOpen } from 'react-icons/io'
 
 class Featured extends React.Component {
 
@@ -15,7 +15,7 @@ class Featured extends React.Component {
     external() {
         if (this.props.external !== "")
             return (
-                <FaExternalLinkAlt className="item" />
+                <IoMdOpen className="item" />
             );
     }
 

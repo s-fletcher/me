@@ -1,7 +1,7 @@
 .Projects {
     h1 {
         font-weight: 500;
-        margin: 0;
+        margin: 0 40px;
         margin-top: 50px;
     }
     .container {
@@ -16,5 +16,17 @@
         /*Define our columns */
         grid-template-columns: repeat(auto-fill, minmax(213px, 1fr)); 
         grid-gap: 25px;
+        .project {
+            position: relative;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background: #fff;
+            text-align: left;
+        }
+    }
+    @media only screen and (max-width : 768px) {
+        h1 {
+            font-size: 1.8em;
+        }
     }
 }

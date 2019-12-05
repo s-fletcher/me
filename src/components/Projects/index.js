@@ -1,18 +1,38 @@
 import React from 'react';
 import './index.scss';
 import Project from './Project'
+import projects from '../../projects';
 
 class Projects extends React.Component {
+    renderProjects(key) {
+        const item = projects[key];
+        if (!item.featured)
+            return (
+                <Project
+                    title={key}
+                    description={item.description}
+                    techStack={item.techStack}
+                    github={item.links.github}
+                    type={item.type}
+                    external={item.links.external} />
+            );
+    }
     render () {
         return (
             <div className="Projects">
                 <h1>Other Noteworthy Projects</h1>
                 <div className="container">
-                    <Project techStack={["Adobe-Premiere", "Adobe-AE"]} description="An centrialized website for Hacklahoma displaying past events" title="Hacklahoma Hub" type="website" github="https://google.com" external="https://google.com" />
-                    <Project techStack={["This", "Is", "Test"]} description="An centrialized website for Hacklahoma displaying past eventsAn centrialized website for Hacklahoma displaying past events" title="Hacklahoma Hub" type="website" github="https://google.com" external="https://google.com" />
-                    <Project techStack={["This", "Is", "Test"]} description="An centrialized website for Hacklahoma displaying past events" title="Hacklahoma Hub" type="website" github="https://google.com" external="https://google.com" />
-                    <Project techStack={["This", "Is", "Test"]} description="An centrialized website for Hacklahoma displaying past events" title="Hacklahoma Hub" type="website" github="https://google.com" external="https://google.com" />
-                    <Project techStack={["This", "Is", "Test"]} description="An centrialized website for Hacklahoma displaying past events" title="Hacklahoma Hub" type="website" github="https://google.com" external="https://google.com" />
+                    {Object.keys(projects).map((key) =>
+                        <Project
+                            featured={projects[key].featured}
+                            title={key}
+                            key={key}
+                            description={projects[key].description}
+                            techStack={projects[key].techStack}
+                            github={projects[key].links.github}
+                            type={projects[key].type}
+                            external={projects[key].links.external} />
+                    )}
                 </div>
             </div>
         );
