@@ -1,5 +1,77 @@
 .Project {
-    box-sizing: border-box;
+    position: relative;
+    // box-sizing: border-box;
     border-radius: 8px;
     background: #fff;
+    text-align: left;
+    .left {
+        position: relative;
+        width: 50%;
+        // background: red;
+        float: left;
+        text-align: left;
+        margin: 10px 0 0 0;
+        .container {
+            padding: 0;
+            // background: coral;
+            display: inline-block;
+            margin-left: 18px;
+            width: 52px;
+            .type {
+                color: #4A6887;
+                margin: 5px 5px 0 5px;
+                width: calc(100% - 10px);
+                height: auto;
+            }
+        }
+    }
+    .right {
+        position: relative;
+        width: 50%;
+        // background: lightcoral;
+        float: right;
+        text-align: right;
+        margin: 20px 0 15px 0;
+        .container {
+            padding: 0;
+            // background: coral;
+            margin-top: 9px;
+            margin-right: 20px;
+            display: inline-block;
+            width: 60px;
+            .item {
+                color: #4A6887;
+                margin: 5px 5px 0 5px;
+                width: 20px;
+                height: auto;
+            }
+        }
+    }
+    h1 {
+        text-align: left;
+        font-weight: 500;
+        margin: 3px 10px 5px 25px;
+        color: #2F2F2F;
+        display: inline-block;
+        // border: 1px solid black;
+        font-size: 1.3em;
+    }
+    p {
+        margin: 5px 25px 65px 25px;
+        color: #4A6887;
+        font-size: .9em;
+    }
+    .techStack {
+        position: absolute;
+        bottom: 25px;
+        margin: 0 20px;
+        .item {
+            display: inline-block;
+            margin: 0 5px;
+            height: auto;
+            font-family: Menlo;
+            font-size: .8em;
+            color: #4A6887;
+        }
+    }
 }

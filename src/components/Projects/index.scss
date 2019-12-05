@@ -1,13 +1,20 @@
 .Projects {
-    max-width: 965px;
-    margin: 0 auto;
-    padding: 38.5px;
-    width: 100%;
-    display: grid;
-    box-sizing: border-box;
-    /* Define Auto Row size */
-    grid-auto-rows: 250px;
-    /*Define our columns */
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
-    grid-gap: 1em;
+    h1 {
+        font-weight: 500;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .container {
+        max-width: 965px;
+        margin: 0 auto;
+        padding: 40px;
+        width: 100%;
+        display: grid;
+        box-sizing: border-box;
+        /* Define Auto Row size */
+        grid-auto-rows: auto;
+        /*Define our columns */
+        grid-template-columns: repeat(auto-fill, minmax(213px, 1fr)); 
+        grid-gap: 25px;
+    }
 }
