@@ -5,6 +5,8 @@ import Header from '../components/Header';
 import Console from '../components/Console';
 import Featured from '../components/Featured';
 import Projects from '../components/Projects'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import projects from '../projects';
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
         <div key={key}>{renderFeatured(key, id)}</div>
       )}
       <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
