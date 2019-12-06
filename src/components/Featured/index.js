@@ -1,9 +1,19 @@
 import React from 'react';
 import './index.scss';
 import { FaGithub } from 'react-icons/fa'
+import { FaTrophy } from 'react-icons/fa'
 import { IoMdOpen } from 'react-icons/io'
+import ReactTooltip from 'react-tooltip'
 
 class Featured extends React.Component {
+
+    componentDidMount() {
+        // randomly adds delay to awards so they arent synchronized
+        var awards = document.getElementsByClassName('award');
+        for (var i = 0; i < awards.length; i++) {
+            awards[i].style.animationDelay = (-1 * Math.random() * 4) + "s";
+        }
+    }
 
     github() {
         if (this.props.github !== "")
@@ -19,12 +29,30 @@ class Featured extends React.Component {
             );
     }
 
+    award() {
+        if(this.props.award) {
+            return(
+                <div>
+                    <FaTrophy data-tip data-for={this.props.title} className="award" />
+                    <ReactTooltip id={this.props.title} type='success' place='right' effect='solid'>
+                        <span>{this.props.awardText}</span>
+                    </ReactTooltip>
+                </div>
+            );
+        }
+    }
+
     render () {
         return (
             <div className={"Featured " + this.props.align}>
-                <a href={this.props.external}><div className="thumbnail">
-                    <img src={this.props.thumbnail} alt="thumbnail" />
-                </div></a>
+                <div className="thumbnail">
+                    <div className="cover">
+                        <div className="container">
+                            <img src={this.props.thumbnail} alt="thumbnail" />
+                            {this.award()}
+                        </div>
+                    </div>
+                </div>
                 <div className="content">
                     <p className="featured">Featured Project</p>
                     <p className="title">{this.props.title}</p>

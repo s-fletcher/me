@@ -33,7 +33,9 @@ class App extends React.Component {
           description={item.description}
           techStack={item.techStack}
           github={item.links.github}
-          external={item.links.external} />
+          external={item.links.external} 
+          award={item.award}
+          awardText={item.awardText} />
       );
   }
   render() {

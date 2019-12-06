@@ -1,6 +1,8 @@
 {
     "Hacklahoma Registration": {
         "featured": true,
+        "award": false,
+        "awardText": "",
         "thumbnail": "./images/hacklahoma-registration-thumbnail.png",
         "type": "website",
         "description": "A heavily edited version of Quill, a registration system for attendees to register for a hackathon. This system was built for Hacklahoma and could be called Quill 2.0",
@@ -12,6 +14,8 @@
     },
     "Hacklahoma 2020": {
         "featured": true,
+        "award": false,
+        "awardText": "",
         "thumbnail": "./images/hacklahoma2020-website-thumbnail.png",
         "type": "website",
         "description": "An informative website created for students who are attending Oklahoma’s biggest hackathon, Hacklahoma",
@@ -27,6 +31,8 @@
     },
     "Centrialized Emergency Relief System": {
         "featured": true,
+        "award": true,
+        "awardText": "Won Facebook and MongoDB challenges at HackTX",
         "thumbnail": "./images/cers-thumbnail.png",
         "type": "website",
         "description": "Provides a way for volunteers and organizers to easily coordinate meetups for on-site cleanup, resource distribution, and donations without a middle-man",
@@ -42,6 +48,8 @@
     },
     "Hacklahoma Hub": {
         "featured": false,
+        "award": false,
+        "awardText": "",
         "thumbnail": "",
         "type": "website",
         "description": "An centrialized website for Hacklahoma displaying past events",
@@ -57,6 +65,8 @@
     },
     "Calculator": {
         "featured": false,
+        "award": false,
+        "awardText": "",
         "thumbnail": "",
         "type": "website",
         "description": "A functional calculator that supports basic mathemtical calculations",
@@ -72,6 +82,8 @@
     },
     "Security Camera": {
         "featured": false,
+        "award": false,
+        "awardText": "",
         "thumbnail": "",
         "type": "hardware",
         "description": "A device that takes a picture and emails the owner when a moving object is detected",
@@ -86,6 +98,8 @@
     },
     "Deaver Brothers": {
         "featured": false,
+        "award": false,
+        "awardText": "",
         "thumbnail": "",
         "type": "website",
         "description": "A informative website created for a local stand up comedian duo",
@@ -101,6 +115,8 @@
     },
     "Cube Platformer": {
         "featured": false,
+        "award": false,
+        "awardText": "",
         "thumbnail": "",
         "type": "website",
         "description": "A simple cube platform to learn the basics of JS and physics",
@@ -116,6 +132,8 @@
     },
     "Mesonet Statistics": {
         "featured": false,
+        "award": false,
+        "awardText": "",
         "thumbnail": "",
         "type": "hardware",
         "description": "A program that calculates statistics based of weather data gathered from mesonet",
@@ -131,6 +149,8 @@
     },
     "White Shirts": {
         "featured": false,
+        "award": false,
+        "awardText": "",
         "thumbnail": "",
         "type": "film",
         "description": "A short film about an isolated man who is recruited into a cult",
