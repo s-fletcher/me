@@ -10,7 +10,7 @@ class Contact extends React.Component {
                 <h1>Get in Touch</h1>
                 {/* <p>I am currently looking for opportunities to work in an internship position, my inbox is always open. Don’t hesitate to reach out and I’ll try my best to respond.</p> */}
                 <div className="description">
-                    <p>I am not currently looking for opportunities however, my inbox is always open. Don’t hesitate to reach out and I’ll try my best to respond.</p>
+                    <p>My inbox is always open. Reach out to me for opportunities, project collaborations, or just to say hi! I'll answer your email as soon as possible.</p>
                 </div>
                 <a href="mailto:sfletchertx@gmail.com"><Button text="Say Hello" /></a>
             </div>

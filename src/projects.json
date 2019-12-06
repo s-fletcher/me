@@ -63,6 +63,22 @@
             "external": "https://hacklahoma.org"
         }
     },
+    "TODO": {
+        "featured": false,
+        "award": false,
+        "awardText": "",
+        "thumbnail": "",
+        "type": "website",
+        "description": "My first react and aws project testing my skills with a simple todo webapp",
+        "techStack": [
+            "React",
+            "AWS"
+        ],
+        "links": {
+            "github": "https://github.com/s-fletcher/todo",
+            "external": "https://todo.samfletcher.me"
+        }
+    },
     "Calculator": {
         "featured": false,
         "award": false,

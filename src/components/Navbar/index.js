@@ -20,7 +20,7 @@ class Navbar extends React.Component {
                     remove();
             }
         });
-        window.addEventListener('resize', function(e) {
+        window.addEventListener('resize', function() {
             if (window.innerWidth >= 768 && document.getElementsByClassName('right')[0].classList.contains("openMenu")) {
                 remove();
             }
@@ -43,6 +43,12 @@ class Navbar extends React.Component {
             behavior: 'smooth',
             block: 'start'
         })
+        // Close menu
+        document.getElementsByClassName("right")[0].classList.remove("openMenu");
+        document.getElementsByClassName("Hamburger")[0].classList.remove("open");
+        document.getElementsByClassName("line")[0].classList.remove("open");
+        document.getElementsByClassName("line")[1].classList.remove("open");
+        document.getElementsByClassName("line")[2].classList.remove("open");
     }
 
     render () {

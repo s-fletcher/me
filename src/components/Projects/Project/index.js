@@ -51,7 +51,7 @@ class Project extends React.Component {
                             {this.github()}{this.external()}
                         </div>
                     </div>
-                    <h1>{this.props.title}</h1>
+                    <a href={this.props.external}><h1>{this.props.title}</h1></a>
                     <p>{this.props.description}</p>
                     <div className="techStack">
                         {this.props.techStack.map((item, key) =>
