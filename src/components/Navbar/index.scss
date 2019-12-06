@@ -15,7 +15,7 @@
         float: right;
         margin-right: 50px;
     }
-    p {
+    p, a {
         display: inline-block;  
         font-size: .8em;
         color: white;
@@ -23,21 +23,14 @@
         margin: auto 30px;
         cursor: pointer;
     }
-    a {
-        display: inline-block;  
-        font-size: .8em;
-        color: white;
-        text-decoration: none;
-        margin: auto 30px;
-    }
     .resume {
         margin: auto 20px;
     }
         @media only screen and (max-width : 768px) {
-        a:nth-child(1) {
+        p:nth-child(1) {
             margin-top: 100px;
         }
-        a {
+        p {
             font-size: 1em;
             display: block;
             text-align: right;

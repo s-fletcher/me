@@ -9,8 +9,13 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import projects from '../projects';
 
-function App() {
-  function renderFeatured(key, id) {
+class App extends React.Component {
+  aboutRef = React.createRef();
+  projectsRef = React.createRef();
+  contactRef = React.createRef();
+
+  // Render featured projects
+  renderFeatured(key, id) {
     const item = projects[key];
     var align;
     if(id % 2 === 0) {
@@ -31,20 +36,23 @@ function App() {
           external={item.links.external} />
       );
   }
-
-  return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <Console />
-      {Object.keys(projects).map((key, id) =>
-        <div key={key}>{renderFeatured(key, id)}</div>
-      )}
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <Navbar aboutRef={this.aboutRef} projectsRef={this.projectsRef} contactRef={this.contactRef} />
+        <Header />
+        <Console aboutRef={this.aboutRef} />
+        <div ref={this.projectsRef} />
+        {/* Mapping through json to render featured projects */
+        Object.keys(projects).map((key, id) =>
+          <div key={key}>{this.renderFeatured(key, id)}</div>
+        )}
+        <Projects projectsRef={this.projectsRef} />
+        <Contact contactRef={this.contactRef} />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

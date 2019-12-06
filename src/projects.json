@@ -55,6 +55,35 @@
             "external": "https://hacklahoma.org"
         }
     },
+    "Calculator": {
+        "featured": false,
+        "thumbnail": "",
+        "type": "website",
+        "description": "A functional calculator that supports basic mathemtical calculations",
+        "techStack": [
+            "HTML",
+            "JS",
+            "Github-Pages"
+        ],
+        "links": {
+            "github": "https://github.com/s-fletcher/calculator2.0",
+            "external": "https://calculator.samfletcher.me"
+        }
+    },
+    "Security Camera": {
+        "featured": false,
+        "thumbnail": "",
+        "type": "hardware",
+        "description": "A device that takes a picture and emails the owner when a moving object is detected",
+        "techStack": [
+            "Raspberry-Pi",
+            "Python"
+        ],
+        "links": {
+            "github": "https://github.com/s-fletcher/Security-Camera",
+            "external": "https://vimeo.com/316245297"
+        }
+    },
     "Deaver Brothers": {
         "featured": false,
         "thumbnail": "",
@@ -66,8 +95,8 @@
             "Github-Pages"
         ],
         "links": {
-            "github": "https://github.com/Hacklahoma/Hacklahoma.github.io",
-            "external": "https://hacklahoma.org"
+            "github": "https://github.com/s-fletcher/deaver",
+            "external": "https://deaver.samfletcher.me"
         }
     },
     "Cube Platformer": {
@@ -81,37 +110,23 @@
             "Github-Pages"
         ],
         "links": {
-            "github": "https://github.com/Hacklahoma/Hacklahoma.github.io",
-            "external": "https://hacklahoma.org"
+            "github": "https://github.com/s-fletcher/cubeplatformer",
+            "external": "https://cubeplatformer.samfletcher.me"
         }
     },
-    "Calculator": {
-        "featured": false,
-        "thumbnail": "",
-        "type": "website",
-        "description": "A functional calculator that supports basic mathemtical calculations",
-        "techStack": [
-            "HTML",
-            "JS",
-            "Github-Pages"
-        ],
-        "links": {
-            "github": "https://github.com/Hacklahoma/Hacklahoma.github.io",
-            "external": "https://hacklahoma.org"
-        }
-    },
-    "Security Camera": {
+    "Mesonet Statistics": {
         "featured": false,
         "thumbnail": "",
         "type": "hardware",
-        "description": "A device that takes a picture and emails the owner when a moving object is detected",
+        "description": "A program that calculates statistics based of weather data gathered from mesonet",
         "techStack": [
-            "Raspberry-Pi",
-            "Python"
+            "Java",
+            "Swing",
+            "JUnit"
         ],
         "links": {
-            "github": "https://github.com/Hacklahoma/Hacklahoma.github.io",
-            "external": "https://hacklahoma.org"
+            "github": "https://github.com/s-fletcher/Mesonet-Statistics",
+            "external": "https://vimeo.com/316505386"
         }
     },
     "White Shirts": {

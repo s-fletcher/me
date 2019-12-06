@@ -6,7 +6,7 @@ class Contact extends React.Component {
     
     render () {
         return (
-            <div className="Contact">
+            <div ref={this.props.contactRef} className="Contact">
                 <h1>Get in Touch</h1>
                 {/* <p>I am currently looking for opportunities to work in an internship position, my inbox is always open. Don’t hesitate to reach out and I’ll try my best to respond.</p> */}
                 <div className="description">

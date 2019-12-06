@@ -35,19 +35,29 @@ class Navbar extends React.Component {
             document.getElementsByClassName("line")[2].classList.toggle("open");
     }
 
+    handleScrollTo = (elRef) => {
+        // Incase the ref supplied isn't ref.current
+        const el = elRef.current ? elRef.current : elRef
+        // Scroll the element into view
+        el.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    }
+
     render () {
         return (
             <div className="Title">
                 <Hamburger onClick={this.handleClick} />
-                <nav name="t">
+                <nav>
                     <div className="left">
-                        <a href="#t" className="sam">Sam Fletcher</a>
+                        <p onClick={() => window.location.reload(false)} className="sam">Sam Fletcher</p>
                     </div>
                     <div className="right">
-                        <a href="#about" className="about">About</a>
-                        <a href="#t" className="projects">Projects</a>
-                        <a href="#t" className="contact">Contact</a>
-                        <a href="#t" className="resume"><Button text="Resume" /></a>
+                        <p onClick={() => { this.handleScrollTo(this.props.aboutRef) }} className="about">About</p>
+                        <p onClick={() => { this.handleScrollTo(this.props.projectsRef) }} className="projects">Projects</p>
+                        <p onClick={() => { this.handleScrollTo(this.props.contactRef) }} className="contact">Contact</p>
+                        <a href="./resume.pdf" target="_blank" className="resume"><Button text="Resume" /></a>
                     </div>
                 </nav>
             </div>

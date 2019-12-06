@@ -7,7 +7,7 @@ class Footer extends React.Component {
             <div className="Footer">
                 <div className="container">
                     <p className="copyright">© 2019 Sam Fletcher</p>
-                    <p className="social"><a href="mailto:sfletchertx@gmail.com">email</a> {"//"} <a href="https://www.github.com/s-fletcher">github</a> {"//"} <a href="https://www.instagram.com/sfletchertx">instagram</a></p>
+                    <p className="social"><a href="https://www.instagram.com/sfletchertx">instagram</a> {"//"} <a href="https://www.github.com/s-fletcher">github</a> {"//"} <a href="https://www.linkedin.com/in/sfletchertx">linkedin</a></p>
                 </div>
             </div>
         );

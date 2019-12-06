@@ -1,22 +1,9 @@
 import React from 'react';
 import './index.scss';
-import Project from './Project'
+import Project from './Project';
 import projects from '../../projects';
 
 class Projects extends React.Component {
-    renderProjects(key) {
-        const item = projects[key];
-        if (!item.featured)
-            return (
-                <Project
-                    title={key}
-                    description={item.description}
-                    techStack={item.techStack}
-                    github={item.links.github}
-                    type={item.type}
-                    external={item.links.external} />
-            );
-    }
     render () {
         return (
             <div className="Projects">

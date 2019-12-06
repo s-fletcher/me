@@ -7,7 +7,7 @@ import { FaExpand } from 'react-icons/fa';
 class Console extends React.Component {
     render () {
         return (
-            <div id="about" className="Console">
+            <div ref={this.props.aboutRef} className="Console">
                 <div className="container">
                     <div className="title">
                         <div className="red"><FaTimes className="icon" /></div>
