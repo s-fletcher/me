@@ -44,6 +44,10 @@
                 margin: 5px 5px 0 5px;
                 width: 20px;
                 height: auto;
+                transition: .5s;
+            }
+            .item:hover {
+                color: #30475e;
             }
         }
     }

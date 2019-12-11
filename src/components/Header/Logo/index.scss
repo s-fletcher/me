@@ -52,6 +52,14 @@
             stroke-dasharray: 13760;
             stroke-dashoffset: 0;
         }
+        @keyframes outline-face {
+        0% {
+            stroke-dashoffset: 13000;
+          }
+        100% {
+            stroke-dashoffset: 0;
+          }
+        }
     }
 }
 
@@ -75,7 +83,7 @@
 
 @keyframes outline-face {
 0% {
-    stroke-dashoffset: 13700;
+    stroke-dashoffset: 13620;
   }
 100% {
     stroke-dashoffset: 0;

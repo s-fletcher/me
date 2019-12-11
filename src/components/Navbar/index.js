@@ -63,7 +63,7 @@ class Navbar extends React.Component {
                         <p onClick={() => { this.handleScrollTo(this.props.aboutRef) }} className="about">About</p>
                         <p onClick={() => { this.handleScrollTo(this.props.projectsRef) }} className="projects">Projects</p>
                         <p onClick={() => { this.handleScrollTo(this.props.contactRef) }} className="contact">Contact</p>
-                        <a href="./resume.pdf" target="_blank" className="resume"><Button text="Resume" /></a>
+                        <a href="./resume.pdf" target="_blank" className="resume"><Button>Resume</Button></a>
                     </div>
                 </nav>
             </div>

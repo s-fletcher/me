@@ -10,6 +10,21 @@ import Footer from '../components/Footer'
 import projects from '../projects';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true
+    };
+  }
+
+  componentDidMount() {
+    // setTimeout(() => {
+      this.setState({
+        loading: false
+      });
+    // }, 5000)
+  }
+
   aboutRef = React.createRef();
   projectsRef = React.createRef();
   contactRef = React.createRef();
@@ -39,6 +54,17 @@ class App extends React.Component {
       );
   }
   render() {
+    if (this.state.loading) 
+      return (
+        <div className="Loading">
+          <div className="lds-grid">
+            <div /><div /><div />
+            <div /><div /><div />
+            <div /><div /><div />
+          </div>
+        </div>
+      );
+
     return (
       <div className="App">
         <Navbar aboutRef={this.aboutRef} projectsRef={this.projectsRef} contactRef={this.contactRef} />

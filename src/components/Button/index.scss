@@ -1,14 +1,14 @@
 .Button {
     display: inline-block;
-    background: #7DC38F;
-    border: 2px solid #73B985;
     border-radius: 5px;
     padding: 8px 10px;
     color: white;
     font-weight: 500;
     transition: .5s;
     cursor: pointer;
+    background: #7DC38F;
+    border: 2px solid rgb(110, 180, 128);
 }
 .Button:hover {
-        background: #73B985;
-    }
+    background: rgb(110, 180, 128);
+}

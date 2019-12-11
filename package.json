@@ -9,7 +9,6 @@
     "react-fps-stats": "^0.1.2",
     "react-icons": "^3.8.0",
     "react-particles-js": "^2.7.0",
-    "react-scripts": "3.2.0",
     "react-scroll-to-component": "^1.0.2",
     "react-tooltip": "^3.11.1"
   },
@@ -33,5 +32,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "fibers": "^4.0.2",
+    "react-scripts": "^3.3.0",
+    "sass": "^1.23.7",
+    "typescript": "^3.7.3",
+    "webpack-dev-server": "^3.9.0"
   }
 }
