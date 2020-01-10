@@ -12,21 +12,20 @@
             "external": "https://login.hacklahoma.org"
         }
     },
-    "Hacklahoma 2020": {
+    "Hacklahoma Hub": {
         "featured": true,
         "award": false,
         "awardText": "",
-        "thumbnail": "./images/hacklahoma2020-website-thumbnail.png",
+        "thumbnail": "./images/hacklahoma-hub-thumbnail.png",
         "type": "website",
-        "description": "An informative website created for students who are attending Oklahoma’s biggest hackathon, Hacklahoma",
+        "description": "A centrialized website created for Hacklahoma displaying past events and celebrating those who organize them",
         "techStack": [
-            "GitHub",
-            "JS",
-            "HTML"
+            "React",
+            "Netlify"
         ],
         "links": {
-            "github": "https://github.com/Hacklahoma/2020",
-            "external": "https://2020.hacklahoma.org"
+            "github": "https://github.com/Hacklahoma/hub",
+            "external": "https://hacklahoma.org"
         }
     },
     "Centrialized Emergency Relief System": {
@@ -46,21 +45,21 @@
             "external": "https://devpost.com/software/cers-centralized-emergency-relief-system"
         }
     },
-    "Hacklahoma Hub": {
+    "Hacklahoma 2020": {
         "featured": false,
         "award": false,
         "awardText": "",
-        "thumbnail": "",
+        "thumbnail": "./images/hacklahoma2020-website-thumbnail.png",
         "type": "website",
-        "description": "An centrialized website for Hacklahoma displaying past events",
+        "description": "An informative website created for students who are attending Oklahoma’s biggest hackathon, Hacklahoma",
         "techStack": [
-            "HTML",
+            "GitHub",
             "JS",
-            "Github-Pages"
+            "HTML"
         ],
         "links": {
-            "github": "https://github.com/Hacklahoma/Hacklahoma.github.io",
-            "external": "https://hacklahoma.org"
+            "github": "https://github.com/Hacklahoma/2020",
+            "external": "https://2020.hacklahoma.org"
         }
     },
     "TODO": {
