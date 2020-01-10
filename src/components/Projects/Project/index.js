@@ -5,6 +5,8 @@ import { IoMdOpen } from 'react-icons/io'
 import { IoIosGlobe } from 'react-icons/io'
 import { IoIosVideocam } from 'react-icons/io'
 import { FaCogs } from 'react-icons/fa'
+import { FaTrophy } from 'react-icons/fa'
+import ReactTooltip from 'react-tooltip'
 
 class Project extends React.Component {
 
@@ -37,10 +39,24 @@ class Project extends React.Component {
             );
     }
 
+    award() {
+        if (this.props.award) {
+            return (
+                <div>
+                    <FaTrophy data-tip data-for={this.props.title} className="award" />
+                    <ReactTooltip id={this.props.title} type='success' place='right' effect='solid'>
+                        <span>{this.props.awardText}</span>
+                    </ReactTooltip>
+                </div>
+            );
+        }
+    }
+
     render () {
         if(!this.props.featured)
             return (
                 <div className="Project">
+                    {this.award()}
                     <div className="left">
                         <div className="container">
                             {this.type()}

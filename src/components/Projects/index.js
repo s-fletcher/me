@@ -18,6 +18,8 @@ class Projects extends React.Component {
                             techStack={projects[key].techStack}
                             github={projects[key].links.github}
                             type={projects[key].type}
+                            award={projects[key].award}
+                            awardText={projects[key].awardText}
                             external={projects[key].links.external} />
                     )}
                 </div>

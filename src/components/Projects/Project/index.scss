@@ -4,6 +4,21 @@
     border-radius: 8px;
     background: #fff;
     text-align: left;
+    .award {
+        color: gold;
+        filter: drop-shadow( 2px 3px 15px rgba(121, 121, 121, 0.3));
+        stroke: #2F2F2F;
+        stroke-width: 20px;
+        overflow: visible;
+        width: 40px;
+        height: auto;
+        position: absolute;
+        top: -15px;
+        right: -18px;
+        cursor: pointer;
+        transform: rotate(10deg);
+        animation: awardLeft 11s infinite linear;
+    }
     .left {
         position: relative;
         width: 50%;
@@ -79,4 +94,13 @@
             color: #4A6887;
         }
     }
+}
+
+@keyframes awardLeft {
+    0% {transform: rotate(10deg)}
+    48% {transform: rotate(10deg)}
+    49% {transform: rotate(2deg)}
+    51% {transform: rotate(18deg)}
+    52% {transform: rotate(10deg)}
+    100% {transform: rotate(10deg)}
 }
