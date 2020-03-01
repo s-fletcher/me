@@ -18,7 +18,7 @@
         "awardText": "",
         "thumbnail": "./images/hacklahoma-hub-thumbnail.png",
         "type": "website",
-        "description": "A centrialized website created for Hacklahoma displaying past events and celebrating those who organize them",
+        "description": "A centralized website created for Hacklahoma displaying past events and celebrating those who organize them",
         "techStack": [
             "React",
             "Netlify"
@@ -84,7 +84,7 @@
         "awardText": "",
         "thumbnail": "",
         "type": "website",
-        "description": "A functional calculator that supports basic mathemtical calculations",
+        "description": "A functional calculator that supports basic mathematical calculations",
         "techStack": [
             "HTML",
             "JS",
@@ -117,7 +117,7 @@
         "awardText": "",
         "thumbnail": "",
         "type": "website",
-        "description": "A informative website created for a local stand up comedian duo",
+        "description": "An informative website created for a local stand up comedian duo",
         "techStack": [
             "HTML",
             "JS",
@@ -151,7 +151,7 @@
         "awardText": "",
         "thumbnail": "",
         "type": "hardware",
-        "description": "A program that calculates statistics based of weather data gathered from mesonet",
+        "description": "A program that calculates statistics based of weather data gathered from Mesonet",
         "techStack": [
             "Java",
             "Swing",
