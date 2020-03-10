@@ -60,13 +60,19 @@ class Featured extends React.Component {
                         <p>{this.props.description}</p>
                     </div>
                     <div className="techStack">
-                        {this.props.techStack.map((item, key) =>
-                            <p className="item" key={key}>{item}</p>
-                        )}
+                        {this.props.techStack.map((item, key) => (
+                            <p className="item" key={key}>
+                                {item}
+                            </p>
+                        ))}
                     </div>
                     <div className="links">
-                        <a href={this.props.github}>{this.github()}</a>
-                        <a href={this.props.external}>{this.external()}</a>
+                        <a href={this.props.github} target="_blank" rel="noopener noreferrer">
+                            {this.github()}
+                        </a>
+                        <a href={this.props.external} target="_blank" rel="noopener noreferrer">
+                            {this.external()}
+                        </a>
                     </div>
                 </div>
             </div>
