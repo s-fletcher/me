@@ -1,3 +1,3 @@
-# Portfolio Website
-A website that showcases all my past work
-https://old.samfletcher.me
+# Portfolio v1.0
+My first portfolio that was made with static HTML
+https://v1.samfletcher.me
