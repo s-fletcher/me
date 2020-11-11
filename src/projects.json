@@ -65,7 +65,7 @@
         "featured": false,
         "award": false,
         "awardText": "",
-        "thumbnail": "./images/hacklahoma2020-website-thumbnail.png",
+        "thumbnail": "",
         "type": "website",
         "description": "An informative website created for students who are attending Oklahoma’s biggest hackathon, Hacklahoma",
         "techStack": [
