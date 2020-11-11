@@ -12,6 +12,19 @@
             "external": "https://wiki.samfletcher.me"
         }
     },
+    "Event Statistics": {
+        "featured": true,
+        "award": false,
+        "awardText": "",
+        "thumbnail": "./images/event-statistics.png",
+        "type": "website",
+        "description": "A dashboard containing statistics from hackathon events completed with a backend for importing data and adding accounts for companies to view our data",
+        "techStack": ["Next.js", "Keystone.js", "Postgres"],
+        "links": {
+            "github": "https://github.com/Hacklahoma/stats",
+            "external": "https://stats.hacklahoma.org"
+        }
+    },
     "Hacklahoma Hub": {
         "featured": true,
         "award": false,
