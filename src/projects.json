@@ -1,15 +1,15 @@
 {
-    "Hacklahoma Registration": {
+    "Internal Wiki": {
         "featured": true,
         "award": false,
         "awardText": "",
-        "thumbnail": "./images/hacklahoma-registration-thumbnail.png",
+        "thumbnail": "./images/wiki-thumbnail.png",
         "type": "website",
-        "description": "A heavily edited version of Quill, a registration system for attendees to register for a hackathon. This system was built for Hacklahoma and could be called Quill 2.0",
-        "techStack": ["Node.js", "Heroku", "Mongo"],
+        "description": "An internal Wiki system intended for Hacklahoma but eventually turned into a passion projects. Feel free to check it out!",
+        "techStack": ["Next.js", "Keystone.js", "Postgres"],
         "links": {
-            "github": "https://github.com/Hacklahoma/login",
-            "external": "https://login.hacklahoma.org"
+            "github": "https://github.com/s-fletcher/wiki",
+            "external": "https://wiki.samfletcher.me"
         }
     },
     "Hacklahoma Hub": {
@@ -43,6 +43,22 @@
         "links": {
             "github": "https://github.com/Shleby/disaster-relief",
             "external": "https://devpost.com/software/cers-centralized-emergency-relief-system"
+        }
+    },
+    "Hacklahoma 2021": {
+        "featured": false,
+        "award": false,
+        "awardText": "",
+        "thumbnail": "",
+        "type": "website",
+        "description": "An informative website created for students who are attending Oklahoma’s biggest hackathon, Hacklahoma",
+        "techStack": [
+            "React",
+            "Netlify"
+        ],
+        "links": {
+            "github": "https://github.com/Hacklahoma/2021",
+            "external": "https://2021.hacklahoma.org"
         }
     },
     "Hacklahoma 2020": {
