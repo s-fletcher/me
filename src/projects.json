@@ -5,7 +5,7 @@
         "awardText": "",
         "thumbnail": "./images/wiki-thumbnail.png",
         "type": "website",
-        "description": "An internal Wiki system intended for Hacklahoma but eventually turned into a passion projects. Feel free to check it out!",
+        "description": "An internal Wiki system completed with a backend, intended for Hacklahoma but eventually turned into a passion project",
         "techStack": ["Next.js", "Keystone.js", "Postgres"],
         "links": {
             "github": "https://github.com/s-fletcher/wiki",
