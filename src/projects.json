@@ -41,23 +41,6 @@
             "external": "https://hacklahoma.org"
         }
     },
-    "Centralized Emergency Relief System": {
-        "featured": true,
-        "award": true,
-        "awardText": "Won Facebook and MongoDB challenges at HackTX",
-        "thumbnail": "./images/cers-thumbnail.png",
-        "type": "website",
-        "description": "Provides a way for volunteers and organizers to easily coordinate meetups for on-site cleanup, resource distribution, and donations without a middle-man",
-        "techStack": [
-            "React",
-            "AWS",
-            "Mongo"
-        ],
-        "links": {
-            "github": "https://github.com/Shleby/disaster-relief",
-            "external": "https://devpost.com/software/cers-centralized-emergency-relief-system"
-        }
-    },
     "Hacklahoma 2021": {
         "featured": false,
         "award": false,
@@ -91,20 +74,21 @@
             "external": "https://2020.hacklahoma.org"
         }
     },
-    "TODO": {
+    "Centralized Emergency Relief System": {
         "featured": false,
-        "award": false,
-        "awardText": "",
-        "thumbnail": "",
+        "award": true,
+        "awardText": "Won Facebook and MongoDB challenges at HackTX",
+        "thumbnail": "./images/cers-thumbnail.png",
         "type": "website",
-        "description": "My first react and aws project testing my skills with a simple todo webapp",
+        "description": "System for volunteers to easily coordinate meetups for emergency relief without a middle-man",
         "techStack": [
             "React",
-            "Netlify"
+            "AWS",
+            "Mongo"
         ],
         "links": {
-            "github": "https://github.com/s-fletcher/todo",
-            "external": "https://todo.samfletcher.me"
+            "github": "https://github.com/Shleby/disaster-relief",
+            "external": "https://devpost.com/software/cers-centralized-emergency-relief-system"
         }
     },
     "Calculator": {
