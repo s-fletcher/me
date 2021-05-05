@@ -11,6 +11,8 @@
     "@chakra-ui/react": "^1.6.0",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
+    "@fontsource/cabin": "^4.2.2",
+    "@fontsource/martel": "^4.2.2",
     "framer-motion": "^4.1.11",
     "next": "latest",
     "react": "^17.0.2",
