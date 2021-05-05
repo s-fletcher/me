@@ -1,7 +1,7 @@
 import { Box, Container, Heading, Link, Text } from '@chakra-ui/layout'
 
 const Home = () => (
-  <Container maxW="container.md" mt={28} centerContent>
+  <Container maxW="container.md" my={24} centerContent>
     <Box>
       <Heading fontWeight="normal" fontSize="3xl" fontFamily="mono">
         Hello world,
