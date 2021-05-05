@@ -1,5 +1,4 @@
 import { Box, Container, Heading, Link, Text } from '@chakra-ui/layout'
-import { useMediaQuery } from '@chakra-ui/media-query'
 
 const Home = () => (
   <Container maxW="container.md" mt={28} centerContent>
