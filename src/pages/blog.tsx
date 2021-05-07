@@ -2,15 +2,15 @@ import { Container } from '@chakra-ui/layout'
 import { Blobs } from '../components/blobs'
 import { Footer } from '../components/footer'
 import { Nav } from '../components/nav'
-import { About } from '../views/about'
+import { Blog } from '../views/blog'
 
-const AboutPage = () => (
+const BlogPage = () => (
   <Container maxW="container.md">
     <Nav />
-    <About />
-    <Blobs view="about" />
+    <Blog />
+    <Blobs view="work" />
     <Footer />
   </Container>
 )
 
-export default AboutPage
+export default BlogPage

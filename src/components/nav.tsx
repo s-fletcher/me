@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Button } from '@chakra-ui/button'
 import { Box, Heading } from '@chakra-ui/layout'
 import { FC } from 'react'
+import { useRouter } from 'next/dist/client/router'
 
 type NavItemProps = {
   active?: boolean
@@ -16,30 +17,37 @@ const NavItem: FC<NavItemProps> = ({ children, active, href }) => (
   </Link>
 )
 
-export const Nav = () => (
-  <Box
-    display="flex"
-    justifyContent="space-between"
-    pos="absolute"
-    left={0}
-    top={0}
-    w="100vw"
-    px={8}
-    py={4}
-    alignItems="center"
-  >
-    <Heading size="lg">Sam</Heading>
+export const Nav = () => {
+  const router = useRouter()
+  return (
     <Box
-      fontFamily="heading"
-      fontSize={18}
       display="flex"
       justifyContent="space-between"
+      pos="absolute"
+      left={0}
+      top={0}
+      w="100vw"
+      px={8}
+      py={4}
+      alignItems="center"
     >
-      <NavItem active href="/">
-        about
-      </NavItem>
-      <NavItem href="/">work</NavItem>
-      <NavItem href="/">blog</NavItem>
+      <Heading size="lg">Sam</Heading>
+      <Box
+        fontFamily="heading"
+        fontSize={18}
+        display="flex"
+        justifyContent="space-between"
+      >
+        <NavItem active={router.pathname === '/'} href="/">
+          about
+        </NavItem>
+        <NavItem active={router.pathname === '/work'} href="/work">
+          work
+        </NavItem>
+        <NavItem active={router.pathname === '/blog'} href="/blog">
+          blog
+        </NavItem>
+      </Box>
     </Box>
-  </Box>
-)
+  )
+}

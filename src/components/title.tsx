@@ -1,13 +1,13 @@
-import { Box, Container, Heading } from '@chakra-ui/layout'
+import { Box, Container, ContainerProps, Heading } from '@chakra-ui/layout'
 import { FC } from 'react'
 
-type TitleProps = {
+type TitleProps = ContainerProps & {
   lineOne: string
   lineTwo: string
 }
 
-export const Title: FC<TitleProps> = ({ lineOne, lineTwo }) => (
-  <Container maxW="container.md" centerContent>
+export const Title: FC<TitleProps> = ({ lineOne, lineTwo, ...props }) => (
+  <Container {...props} maxW="container.md" centerContent>
     <Box mt={32}>
       <Heading fontWeight="normal" fontSize="3xl" fontFamily="mono">
         {lineOne}
