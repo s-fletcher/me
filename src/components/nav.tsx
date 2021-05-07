@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Button } from '@chakra-ui/button'
-import { Box, Heading, Text } from '@chakra-ui/layout'
+import { Box, Heading } from '@chakra-ui/layout'
 import { FC } from 'react'
 
 type NavItemProps = {

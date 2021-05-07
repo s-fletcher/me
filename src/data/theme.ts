@@ -8,6 +8,7 @@ export const theme = extendTheme({
   colors: {
     orange: {
       50: '#FBF8F5',
+      100: '#BEBAB6',
       500: '#F4A261',
       700: '#E76F51',
     },
@@ -23,6 +24,7 @@ export const theme = extendTheme({
   styles: {
     global: (props) => ({
       body: {
+        overflowX: 'hidden',
         bg: mode('orange.50', 'black')(props),
         color: mode('teal.800', 'white')(props),
       },
