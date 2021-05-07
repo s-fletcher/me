@@ -1,10 +1,11 @@
 import { Image } from '@chakra-ui/image'
+import { FC } from 'react'
 
 type BlobsProps = {
   view: 'about' | 'work' | 'blog'
 }
 
-export const Blobs = ({ view }: BlobsProps) => (
+export const Blobs: FC<BlobsProps> = ({ view }) => (
   <>
     <Image
       zIndex={-1}
