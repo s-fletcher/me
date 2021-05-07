@@ -24,9 +24,12 @@ export const theme = extendTheme({
   styles: {
     global: (props) => ({
       body: {
-        overflowX: 'hidden',
         bg: mode('orange.50', 'black')(props),
         color: mode('teal.800', 'white')(props),
+      },
+      '#__next': {
+        overflowX: 'hidden',
+        position: 'relative',
       },
     }),
   },
