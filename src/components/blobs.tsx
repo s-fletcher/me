@@ -5,7 +5,7 @@ type BlobsProps = {
   view: 'about' | 'work' | 'blog';
 };
 
-export const Blobs: FC<BlobsProps> = ({ view }) => (
+export const Blobs: FC<BlobsProps> = () => (
   <>
     <Image
       zIndex={-1}
