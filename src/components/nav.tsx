@@ -10,7 +10,7 @@ type NavItemProps = {
 
 const NavItem: FC<NavItemProps> = ({ children, active, href }) => (
   <Link href={href}>
-    <Button opacity={active ? 1 : 0.5} pr={2} pl={2} mx={2} variant="unstyled">
+    <Button opacity={active ? 1 : 0.5} pr={2} pl={2} mx={3} variant="unstyled">
       {children}
     </Button>
   </Link>
