@@ -1,5 +1,5 @@
-import { extendTheme } from '@chakra-ui/react'
-import { mode } from '@chakra-ui/theme-tools'
+import { extendTheme } from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
 
 export const theme = extendTheme({
   config: {
@@ -45,4 +45,4 @@ export const theme = extendTheme({
   shadows: {
     card: '0 4px 14px rgba(0,0,0,0.075)',
   },
-})
+});

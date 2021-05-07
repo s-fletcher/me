@@ -1,4 +1,4 @@
-import { Box, Heading, Link, Text } from '@chakra-ui/layout'
+import { Box, Heading, Link, Text } from '@chakra-ui/layout';
 
 export const AboutBox = () => (
   <Box
@@ -23,4 +23,4 @@ export const AboutBox = () => (
       </Link>
     </Text>
   </Box>
-)
+);

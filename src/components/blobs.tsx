@@ -1,9 +1,9 @@
-import { Image } from '@chakra-ui/image'
-import { FC } from 'react'
+import { Image } from '@chakra-ui/image';
+import { FC } from 'react';
 
 type BlobsProps = {
-  view: 'about' | 'work' | 'blog'
-}
+  view: 'about' | 'work' | 'blog';
+};
 
 export const Blobs: FC<BlobsProps> = ({ view }) => (
   <>
@@ -36,4 +36,4 @@ export const Blobs: FC<BlobsProps> = ({ view }) => (
       src="/images/blob4.png"
     />
   </>
-)
+);

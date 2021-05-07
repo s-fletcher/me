@@ -1,13 +1,13 @@
-import Link from 'next/link'
-import { Button } from '@chakra-ui/button'
-import { Box, Heading } from '@chakra-ui/layout'
-import { FC } from 'react'
-import { useRouter } from 'next/dist/client/router'
+import Link from 'next/link';
+import { Button } from '@chakra-ui/button';
+import { Box, Heading } from '@chakra-ui/layout';
+import { FC } from 'react';
+import { useRouter } from 'next/dist/client/router';
 
 type NavItemProps = {
-  active?: boolean
-  href: string
-}
+  active?: boolean;
+  href: string;
+};
 
 const NavItem: FC<NavItemProps> = ({ children, active, href }) => (
   <Link href={href}>
@@ -15,10 +15,10 @@ const NavItem: FC<NavItemProps> = ({ children, active, href }) => (
       {children}
     </Button>
   </Link>
-)
+);
 
 export const Nav = () => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <Box
       display="flex"
@@ -49,5 +49,5 @@ export const Nav = () => {
         </NavItem>
       </Box>
     </Box>
-  )
-}
+  );
+};

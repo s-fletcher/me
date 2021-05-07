@@ -1,5 +1,5 @@
-import { Box } from '@chakra-ui/layout'
-import { Title } from '../../components/title'
+import { Box } from '@chakra-ui/layout';
+import { Title } from '../../components/title';
 
 export const Work = () => (
   <>
@@ -8,4 +8,4 @@ export const Work = () => (
       Coming soon...
     </Box>
   </>
-)
+);
