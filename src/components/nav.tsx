@@ -15,7 +15,7 @@ const NavItem: FC<NavItemProps> = ({ children, active, href }) => (
       opacity={active ? 1 : 0.5}
       pr={2}
       pl={2}
-      mx={[3, 1]}
+      mx={[1, 3]}
       variant="unstyled"
     >
       {children}
