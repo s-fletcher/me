@@ -5,6 +5,11 @@ type BlobsProps = {
   view: 'about' | 'work' | 'blog';
 };
 
+/**
+ * TODO:
+ * - Rotate blobs based on view
+ * - Change size of blobs on smaller screens
+ */
 export const Blobs: FC<BlobsProps> = () => (
   <>
     <Image
