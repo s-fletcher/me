@@ -4,7 +4,7 @@ export const AboutBox = () => (
   <Box
     boxShadow="card"
     borderRadius="lg"
-    mt={60}
+    mt={[40, 60]}
     bg="white"
     py={10}
     px={[8, 10, 20]}
