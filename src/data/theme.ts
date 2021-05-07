@@ -32,6 +32,7 @@ export const theme = extendTheme({
     Link: {
       baseStyle: {
         color: 'blue.500',
+        borderRadius: 4,
       },
     },
   },
