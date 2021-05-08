@@ -2,7 +2,7 @@ import { Image } from '@chakra-ui/image';
 import { Box, Heading, Link, Stack, Text } from '@chakra-ui/layout';
 
 export const BlogBox = () => (
-  <Box boxShadow="card" borderRadius="lg" mt={40} bg="white" py={8} px={8}>
+  <Box boxShadow="card" borderRadius="lg" mt={40} bg="white" py={[8, 6]} px={6}>
     <Stack direction={['column', 'row']} spacing={8} alignItems="stretch">
       <Box
         h={48}
