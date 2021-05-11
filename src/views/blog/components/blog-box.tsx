@@ -29,7 +29,7 @@ export const BlogBox: FC<BlogBoxProps> = ({
         borderRadius="lg"
         bg={bg}
       >
-        <Image p={4} maxH="100%" src={`/images/blog/${image}`} />
+        <Image maxH="calc(100% - 1em)" src={`/images/blog/${image}`} />
       </Box>
       <Stack direction="column" justifyContent="space-between">
         <Stack direction="column" spacing={3}>

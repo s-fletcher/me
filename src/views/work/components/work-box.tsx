@@ -41,7 +41,7 @@ export const WorkBox: FC<WorkBoxProps> = ({
         borderRadius="lg"
         bg={bg}
       >
-        <Image p={4} maxH="100%" src={`/images/work/${image}`} />
+        <Image maxH="calc(100% - 1em)" src={`/images/work/${image}`} />
       </Box>
       <Stack
         direction={['column', 'row']}
