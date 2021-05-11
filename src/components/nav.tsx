@@ -37,7 +37,9 @@ export const Nav = () => {
       py={4}
       alignItems="center"
     >
-      <Heading size="lg">Sam</Heading>
+      <Link href="/">
+        <Heading size="lg">Sam</Heading>
+      </Link>
       <Box
         fontFamily="heading"
         fontSize={18}
