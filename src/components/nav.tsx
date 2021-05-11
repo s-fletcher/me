@@ -38,7 +38,9 @@ export const Nav = () => {
       alignItems="center"
     >
       <Link href="/">
-        <Heading size="lg">Sam</Heading>
+        <Button variant="unstyled">
+          <Heading size="lg">Sam</Heading>
+        </Button>
       </Link>
       <Box
         fontFamily="heading"
