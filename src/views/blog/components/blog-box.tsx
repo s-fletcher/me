@@ -1,7 +1,21 @@
 import { Image } from '@chakra-ui/image';
 import { Box, Heading, Link, Stack, Text } from '@chakra-ui/layout';
+import { FC } from 'react';
 
-export const BlogBox = () => (
+type BlogBoxProps = {
+  title: string;
+  href: string;
+  image: string;
+  bg: string;
+};
+
+export const BlogBox: FC<BlogBoxProps> = ({
+  children,
+  title,
+  href,
+  image,
+  bg,
+}) => (
   <Box boxShadow="card" borderRadius="lg" mt={40} bg="white" py={[8, 6]} px={6}>
     <Stack direction={['column', 'row']} spacing={8} alignItems="stretch">
       <Box
@@ -13,25 +27,21 @@ export const BlogBox = () => (
         justifyContent="center"
         pos="relative"
         borderRadius="lg"
-        bg="linear-gradient(#62F9FF7F, #1697FF7F)"
+        bg={bg}
       >
-        <Image p={4} maxH="100%" src="/images/blog/react-cover.png" />
+        <Image p={4} maxH="100%" src={`/images/blog/${image}`} />
       </Box>
       <Stack direction="column" justifyContent="space-between">
         <Stack direction="column" spacing={3}>
-          <Heading size="md">Creating a React App for Beginners</Heading>
-          <Text>
-            This is a guide to creating your first app with React! In this
-            walkthrough will have you building an application in React from
-            scratch and learning some cool tools that come with it.
-          </Text>
+          <Heading size="md">{title}</Heading>
+          <Text>{children}</Text>
         </Stack>
         <Link
           color="inherit"
           w="fit-content"
           alignSelf="flex-end"
           target="_blank"
-          href="https://github.com/Hacklahoma/guides/blob/react/README.md"
+          href={href}
         >
           <Heading p={2} m={0} textDecoration="underline" size="sm">
             Read
