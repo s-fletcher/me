@@ -51,6 +51,9 @@ export const Nav = () => {
         <NavItem active={router.pathname === '/'} href="/">
           about
         </NavItem>
+        <NavItem active={router.pathname === '/photos'} href="/photos">
+          photos
+        </NavItem>
         <NavItem active={router.pathname === '/work'} href="/work">
           work
         </NavItem>

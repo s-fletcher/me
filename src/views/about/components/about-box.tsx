@@ -11,10 +11,9 @@ export const AboutBox = () => (
   >
     <Heading size="lg">About</Heading>
     <Text my={4}>
-      I&apos;m a Computer Science student at the University of Oklahoma
-      currently working an entry level Software Engineering position in Oklahoma
-      City. Please take a look around my website, it&apos;s the very best way to
-      learn more about me.
+      I&apos;m a Software Engineer with over three years of experience currently
+      working in Oklahoma City. Please take a look around my website, it&apos;s
+      the very best way to learn more about me.
     </Text>
     <Text>
       View my{' '}
