@@ -43,7 +43,7 @@ export const Photos = () => {
 
   return (
     <>
-      <Title lineOne="Welcome to my" lineTwo="Creative Detox" />
+      <Title lineOne="I took some" lineTwo="Photos" />
       <SimpleGrid mt={40} columns={2} spacing={2}>
         {images.map((image) => (
           <Button
