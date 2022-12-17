@@ -65,7 +65,13 @@ export const Photos = () => {
           </Button>
         ))}
       </SimpleGrid>
-      <Modal size="6xl" isCentered isOpen={isOpen} onClose={onClose}>
+      <Modal
+        allowPinchZoom
+        size="6xl"
+        isCentered
+        isOpen={isOpen}
+        onClose={onClose}
+      >
         <ModalOverlay />
         <ModalContent>
           <Image
