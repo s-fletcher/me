@@ -6,7 +6,7 @@ import { Nav } from '../components/nav';
 import { Photos } from '../views/photos';
 
 const BlogPage = () => (
-  <Container maxW="container.md">
+  <Container maxW="container.xl">
     <Head>
       <title>Photos • Sam</title>
     </Head>
