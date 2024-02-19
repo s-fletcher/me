@@ -26,7 +26,7 @@ export const Footer = () => (
       icon={FaLinkedinIn}
     />
     <FooterItem
-      href="https://www.instagram.com/sfletchertx/"
+      href="https://www.instagram.com/samfletcher.me/"
       icon={FaInstagram}
     />
   </Box>
