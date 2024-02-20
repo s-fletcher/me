@@ -17,10 +17,7 @@ const FooterItem: FC<FooterItemProps> = ({ icon, href }) => (
 
 export const Footer = () => (
   <Box display="flex" justifyContent="center" m={14}>
-    <FooterItem
-      href="mailto:sfletchertx@gmail.com (Sam Fletcher)"
-      icon={FaAt}
-    />
+    <FooterItem href="mailto:sam@samfletcher.me (Sam Fletcher)" icon={FaAt} />
     <FooterItem
       href="https://www.linkedin.com/in/sfletchertx/"
       icon={FaLinkedinIn}
